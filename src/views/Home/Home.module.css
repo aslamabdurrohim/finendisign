@@ -31,7 +31,9 @@
 .home_title_wrapper {
     display: flex;
     align-items: center;
+    justify-content: center;
     padding: 0.5rem;
+    width: 100%;
 }
 
 .home_title {
@@ -44,6 +46,9 @@
 .home_logo_wrapper {
     width: 100px;
     height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .home_logo {
@@ -57,4 +62,13 @@
     justify-content: center;
     width: 100%;
 }
+
+@media 
+    (min-width: 320px) and 
+    (max-width: 641px) {    
+    .home_title {
+        font-size: 3rem;
+    }
+}
+
   
