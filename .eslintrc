@@ -24,12 +24,9 @@
             "node": {
                 "paths": ["src"]
             }
-        },
-        "flowtype": {
-            "onlyFilesWithFlowAnnotation": true
         }
     },
-    "plugins": ["react", "jsx-a11y", "flowtype"],
+    "plugins": ["react", "jsx-a11y"],
     "rules": {
         "linebreak-style": ["off"],
         "indent": [
@@ -111,6 +108,7 @@
             "eventHandlerPrefix": "handle",
             "eventHandlerPropPrefix": "on"
         }],
+        "react/button-has-type": ["off"],
         "jsx-a11y/anchor-is-valid": [
             "error",
             {

@@ -1,0 +1,20 @@
+.button_home {
+    background: transparent;
+    font: inherit;
+    border: 2px solid #fff;
+    border-radius: 0;
+    padding: 0;
+    width: 9.5rem;
+    height: 2.5rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+.button_home:focus {
+    outline: none;
+}
+
+.button_home:hover {
+    background: #fff;
+    color: #000;
+}
