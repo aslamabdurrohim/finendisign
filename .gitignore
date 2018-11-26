@@ -63,8 +63,5 @@ typings/
 # vscode
 .vscode
 
-# Server-Bild
-server-build
-
 # DS Store
 .DS_Store
