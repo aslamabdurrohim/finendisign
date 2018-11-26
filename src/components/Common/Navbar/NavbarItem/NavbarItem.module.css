@@ -10,17 +10,13 @@
     letter-spacing: 2.5px;
     text-transform: none;
     text-decoration: none;
-    color: #222;
+    color: #9c9c9c;
     border-bottom: 1px solid transparent;
 }
 
-.navbaritem a:visited {
-    color: #00eaff;
-    border-bottom-color: #00eaff;
-}
-
 .navbaritem a:hover,
-.navitem_active {
+a.navitem_active {
+    color: #00eaff;
     border-bottom-color: #00eaff;
     height: 18px;
 }

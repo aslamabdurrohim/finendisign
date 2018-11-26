@@ -68,3 +68,4 @@ typings/
 
 # server-build
 server-build
+server-build/.hot
