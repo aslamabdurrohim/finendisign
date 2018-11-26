@@ -1,0 +1,39 @@
+.navbaritem {
+    list-style: none;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 2rem;
+}
+
+.navbaritem a {
+    line-height: 5.4em;
+    letter-spacing: 2.5px;
+    text-transform: none;
+    text-decoration: none;
+    color: #222;
+    border-bottom: 1px solid transparent;
+}
+
+.navbaritem a:visited {
+    color: #00eaff;
+    border-bottom-color: #00eaff;
+}
+
+.navbaritem a:hover,
+.navitem_active {
+    border-bottom-color: #00eaff;
+    height: 18px;
+}
+
+.navbaritem_brand_wrapper {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbaritem_brand_logo {
+    width: 100%;
+    height: auto;
+}

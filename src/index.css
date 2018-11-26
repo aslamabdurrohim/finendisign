@@ -24,3 +24,15 @@ code {
     width: 100vw;
   }
 }
+
+a, a:visited {
+  color: #80fbff;
+  border-bottom: 1px solid transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fff;
+  border-color: #fff;
+  transition: border 0.2s ease-out;
+}

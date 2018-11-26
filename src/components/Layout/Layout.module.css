@@ -1,0 +1,22 @@
+div.layout_container_loaded {
+    animation: fadein 1s;
+}
+
+.layout_container {
+    background: #333;
+    color: #fff;
+}
+
+.layout_main_container {
+    margin: 150px auto 65px;
+}
+
+.layout_main_wrapper {
+    padding: 85px 30px 23px;
+    margin: 0 120px;
+}
+
+@keyframes fadein {
+    from { opacity: 0;}
+    to { opacity: 1;}
+}
