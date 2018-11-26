@@ -66,5 +66,5 @@ typings/
 # DS Store
 .DS_Store
 
-# Server-build
+# server-build
 server-build

@@ -10,7 +10,25 @@
     cursor: pointer;
 }
 
-.button_home:focus {
+.button_sumit {
+    background: #292929;
+    border-color: #292929;
+    border-radius: 300px;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    font: inherit;
+    font-size: 14px;
+    height: 42px;
+    font-stretch: 100%;
+    letter-spacing: 2px;
+    line-height: 14px;
+    min-width: 134px;
+}
+
+.button_home:focus,
+.button_sumit:focus {
     outline: none;
 }
 

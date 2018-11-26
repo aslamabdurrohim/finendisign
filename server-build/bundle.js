@@ -22,7 +22,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "f971e28ae1f03977ca7c";
+/******/ 	var hotCurrentHash = "84b19a6d8f0a35b5e44e";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -759,7 +759,51 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("exports = module.exports = __webpack_require__(/*! ../../../../node_modules/cra-universal/node_modules/css-loader/lib/css-base.js */ \"./node_modules/cra-universal/node_modules/css-loader/lib/css-base.js\")(false);\n// imports\n\n\n// module\nexports.push([module.i, \".button_home {\\n    background: transparent;\\n    font: inherit;\\n    border: 2px solid #fff;\\n    border-radius: 0;\\n    padding: 0;\\n    width: 9.5rem;\\n    height: 2.5rem;\\n    color: #fff;\\n    cursor: pointer;\\n}\\n\\n.button_home:focus {\\n    outline: none;\\n}\\n\\n.button_home:hover {\\n    background: #fff;\\n    color: #000;\\n}\", \"\"]);\n\n// exports\n\n\n//# sourceURL=webpack:///./src/components/Common/Button/Button.module.css?./node_modules/cra-universal/node_modules/css-loader");
+eval("exports = module.exports = __webpack_require__(/*! ../../../../node_modules/cra-universal/node_modules/css-loader/lib/css-base.js */ \"./node_modules/cra-universal/node_modules/css-loader/lib/css-base.js\")(false);\n// imports\n\n\n// module\nexports.push([module.i, \".button_home {\\n    background: transparent;\\n    font: inherit;\\n    border: 2px solid #fff;\\n    border-radius: 0;\\n    padding: 0;\\n    width: 9.5rem;\\n    height: 2.5rem;\\n    color: #fff;\\n    cursor: pointer;\\n}\\n\\n.button_sumit {\\n    background: #292929;\\n    border-color: #292929;\\n    border-radius: 300px;\\n    font-weight: 600;\\n    color: #fff;\\n    text-align: center;\\n    cursor: pointer;\\n    font: inherit;\\n    font-size: 14px;\\n    height: 42px;\\n    font-stretch: 100%;\\n    letter-spacing: 2px;\\n    line-height: 14px;\\n    min-width: 134px;\\n}\\n\\n.button_home:focus,\\n.button_sumit:focus {\\n    outline: none;\\n}\\n\\n.button_home:hover {\\n    background: #fff;\\n    color: #000;\\n}\", \"\"]);\n\n// exports\n\n\n//# sourceURL=webpack:///./src/components/Common/Button/Button.module.css?./node_modules/cra-universal/node_modules/css-loader");
+
+/***/ }),
+
+/***/ "./node_modules/cra-universal/node_modules/css-loader/index.js!./src/components/Common/Footer/Footer.module.css":
+/*!*************************************************************************************************************!*\
+  !*** ./node_modules/cra-universal/node_modules/css-loader!./src/components/Common/Footer/Footer.module.css ***!
+  \*************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("exports = module.exports = __webpack_require__(/*! ../../../../node_modules/cra-universal/node_modules/css-loader/lib/css-base.js */ \"./node_modules/cra-universal/node_modules/css-loader/lib/css-base.js\")(false);\n// imports\n\n\n// module\nexports.push([module.i, \".footer {\\n    height: 65px;\\n    display: flex;\\n    justify-content: flex-end;\\n    align-items: center;\\n    background: #fff;\\n    position: fixed;\\n    width: 100vw;\\n    bottom: 0;\\n    left: 0;\\n}\", \"\"]);\n\n// exports\n\n\n//# sourceURL=webpack:///./src/components/Common/Footer/Footer.module.css?./node_modules/cra-universal/node_modules/css-loader");
+
+/***/ }),
+
+/***/ "./node_modules/cra-universal/node_modules/css-loader/index.js!./src/components/Common/Input/Input.module.css":
+/*!***********************************************************************************************************!*\
+  !*** ./node_modules/cra-universal/node_modules/css-loader!./src/components/Common/Input/Input.module.css ***!
+  \***********************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("exports = module.exports = __webpack_require__(/*! ../../../../node_modules/cra-universal/node_modules/css-loader/lib/css-base.js */ \"./node_modules/cra-universal/node_modules/css-loader/lib/css-base.js\")(false);\n// imports\n\n\n// module\nexports.push([module.i, \".input {\\n    border-radius: 0;\\n    height: 42px;\\n    font: inherit;\\n    font-weight: 400;\\n    padding: 12px;\\n    font-size: 14px;\\n}\\n\\n.input:focus {\\n    outline: none;\\n}\", \"\"]);\n\n// exports\n\n\n//# sourceURL=webpack:///./src/components/Common/Input/Input.module.css?./node_modules/cra-universal/node_modules/css-loader");
+
+/***/ }),
+
+/***/ "./node_modules/cra-universal/node_modules/css-loader/index.js!./src/components/Common/Navbar/Navbar.module.css":
+/*!*************************************************************************************************************!*\
+  !*** ./node_modules/cra-universal/node_modules/css-loader!./src/components/Common/Navbar/Navbar.module.css ***!
+  \*************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("exports = module.exports = __webpack_require__(/*! ../../../../node_modules/cra-universal/node_modules/css-loader/lib/css-base.js */ \"./node_modules/cra-universal/node_modules/css-loader/lib/css-base.js\")(false);\n// imports\n\n\n// module\nexports.push([module.i, \".navbar_container {\\n    min-height: 150px;\\n    padding: 2rem;\\n    position: fixed;\\n    top: 0;\\n    left: 0;\\n    width: 100%;\\n    height: 150px;\\n    z-index: 99;\\n    background: #fff;\\n}\\n\\n.navbar_list {\\n    display: flex;\\n    align-items: center;\\n    margin: 0;\\n    padding: 0;\\n}\", \"\"]);\n\n// exports\n\n\n//# sourceURL=webpack:///./src/components/Common/Navbar/Navbar.module.css?./node_modules/cra-universal/node_modules/css-loader");
+
+/***/ }),
+
+/***/ "./node_modules/cra-universal/node_modules/css-loader/index.js!./src/components/Common/Navbar/NavbarItem/NavbarItem.module.css":
+/*!****************************************************************************************************************************!*\
+  !*** ./node_modules/cra-universal/node_modules/css-loader!./src/components/Common/Navbar/NavbarItem/NavbarItem.module.css ***!
+  \****************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/cra-universal/node_modules/css-loader/lib/css-base.js */ \"./node_modules/cra-universal/node_modules/css-loader/lib/css-base.js\")(false);\n// imports\n\n\n// module\nexports.push([module.i, \".navbaritem {\\n    list-style: none;\\n    font-size: 12px;\\n    font-weight: 600;\\n    margin-right: 2rem;\\n}\\n\\n.navbaritem a {\\n    line-height: 5.4em;\\n    letter-spacing: 2.5px;\\n    text-transform: none;\\n    text-decoration: none;\\n    color: #222;\\n    border-bottom: 1px solid transparent;\\n}\\n\\n.navbaritem a:visited {\\n    color: #00eaff;\\n    border-bottom-color: #00eaff;\\n}\\n\\n.navbaritem a:hover,\\n.navitem_active {\\n    border-bottom-color: #00eaff;\\n    height: 18px;\\n}\\n\\n.navbaritem_brand_wrapper {\\n    width: 100px;\\n    height: 100px;\\n    display: flex;\\n    justify-content: center;\\n    align-items: center;\\n}\\n\\n.navbaritem_brand_logo {\\n    width: 100%;\\n    height: auto;\\n}\", \"\"]);\n\n// exports\n\n\n//# sourceURL=webpack:///./src/components/Common/Navbar/NavbarItem/NavbarItem.module.css?./node_modules/cra-universal/node_modules/css-loader");
 
 /***/ }),
 
@@ -771,6 +815,28 @@ eval("exports = module.exports = __webpack_require__(/*! ../../../../node_module
 /***/ (function(module, exports, __webpack_require__) {
 
 eval("exports = module.exports = __webpack_require__(/*! ../../../node_modules/cra-universal/node_modules/css-loader/lib/css-base.js */ \"./node_modules/cra-universal/node_modules/css-loader/lib/css-base.js\")(false);\n// imports\n\n\n// module\nexports.push([module.i, \".image_container {\\n    position: relative;\\n    width: 100%;\\n    height: 100%;\\n    overflow: hidden;\\n}\\n\\n.image_preload {\\n    position: absolute;\\n    top: 0;\\n    right: 0;\\n    bottom: 0;\\n    left: 0;\\n    background-size: cover;\\n    max-width: 100%;\\n    height: auto;\\n}\\n\\n.image_loaded {\\n    position: absolute;\\n    z-index: 2;\\n    top: 0;\\n    right: 0;\\n    bottom: 0;\\n    left: 0;\\n    background-size: cover;\\n    background-repeat: no-repeat;\\n    background-position: center;\\n    max-width: 100%;\\n    height: auto;\\n    opacity: 0;\\n    transition: opacity 1s ease;\\n}\\n\\n.image_fade_in {\\n    opacity: 1;\\n}\\n\", \"\"]);\n\n// exports\n\n\n//# sourceURL=webpack:///./src/components/ImageLoader/ImageLoader.module.css?./node_modules/cra-universal/node_modules/css-loader");
+
+/***/ }),
+
+/***/ "./node_modules/cra-universal/node_modules/css-loader/index.js!./src/components/Layout/Layout.module.css":
+/*!******************************************************************************************************!*\
+  !*** ./node_modules/cra-universal/node_modules/css-loader!./src/components/Layout/Layout.module.css ***!
+  \******************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("exports = module.exports = __webpack_require__(/*! ../../../node_modules/cra-universal/node_modules/css-loader/lib/css-base.js */ \"./node_modules/cra-universal/node_modules/css-loader/lib/css-base.js\")(false);\n// imports\n\n\n// module\nexports.push([module.i, \"div.layout_container_loaded {\\n    animation: fadein 1s;\\n}\\n\\n.layout_container {\\n    background: #333;\\n    color: #fff;\\n}\\n\\n.layout_main_container {\\n    margin: 150px auto 65px;\\n}\\n\\n.layout_main_wrapper {\\n    padding: 85px 30px 23px;\\n    margin: 0 120px;\\n}\\n\\n@keyframes fadein {\\n    from { opacity: 0;}\\n    to { opacity: 1;}\\n}\", \"\"]);\n\n// exports\n\n\n//# sourceURL=webpack:///./src/components/Layout/Layout.module.css?./node_modules/cra-universal/node_modules/css-loader");
+
+/***/ }),
+
+/***/ "./node_modules/cra-universal/node_modules/css-loader/index.js!./src/views/Contact/Contact.module.css":
+/*!***************************************************************************************************!*\
+  !*** ./node_modules/cra-universal/node_modules/css-loader!./src/views/Contact/Contact.module.css ***!
+  \***************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("exports = module.exports = __webpack_require__(/*! ../../../node_modules/cra-universal/node_modules/css-loader/lib/css-base.js */ \"./node_modules/cra-universal/node_modules/css-loader/lib/css-base.js\")(false);\n// imports\n\n\n// module\nexports.push([module.i, \".contact_container {\\n    display: flex;\\n    justify-content: space-between;\\n}\\n\\n.contact_container p {\\n    font-size: 13px;\\n    font-weight: 400;\\n    font-style: normal;\\n    line-height: 1.3em;\\n    color: #fff;\\n    margin-top: 0;\\n}\\n\\n.contact_info {\\n    width: 35%;\\n}\\n\\n.contact_form {\\n    width: 100%;\\n    margin-left: 1rem;\\n    display: flex;\\n    flex-flow: column nowrap;\\n}\\n\\n.contact_form input,\\n.contact_form textarea {\\n    display: block;\\n    width: 100%;\\n    margin-bottom: 2rem;\\n}\\n\\n.contact_form_name {\\n    display: flex;\\n    align-items: center;\\n    justify-content: space-between;\\n    margin-bottom: 2rem;\\n}\\n\\n.contact_form_name input {\\n    margin: 0;\\n}\\n\\n.contact_title {\\n    font-weight: 600;\\n    letter-spacing: 3.5px;\\n    line-height: 1.2em;\\n    margin-top: 0;\\n    text-transform: uppercase;\\n}\\n\\n.contact_form_fname,\\n.contact_form_lname {\\n    width: 48%;\\n}\\n\\n.contact_form_fname label,\\n.contact_form_lname label {\\n    display: flex;\\n    flex-flow: column nowrap;\\n    font-size: 10px;\\n}\", \"\"]);\n\n// exports\n\n\n//# sourceURL=webpack:///./src/views/Contact/Contact.module.css?./node_modules/cra-universal/node_modules/css-loader");
 
 /***/ }),
 
@@ -827,7 +893,7 @@ eval("(() => {\n  // Handle hot updates, copied with slight adjustments from web
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _cra_express_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @cra-express/core */ \"@cra-express/core\");\n/* harmony import */ var _cra_express_core__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_cra_express_core__WEBPACK_IMPORTED_MODULE_0__);\n\n\nvar path = __webpack_require__(/*! path */ \"path\");\n\nvar React = __webpack_require__(/*! react */ \"react\");\n\nvar App = __webpack_require__(/*! ../src/App */ \"./src/App.js\").default;\n\nvar clientBuildPath = path.resolve(__dirname, \"../client\");\nvar app = Object(_cra_express_core__WEBPACK_IMPORTED_MODULE_0__[\"createReactAppExpress\"])({\n  clientBuildPath: clientBuildPath,\n  universalRender: function universalRender(req, res) {\n    return React.createElement(App, null);\n  }\n});\n\nif (true) {\n  module.hot.accept(/*! ../src/App */ \"./src/App.js\", function(__WEBPACK_OUTDATED_DEPENDENCIES__) { (function () {\n    App = __webpack_require__(!(function webpackMissingModule() { var e = new Error(\"Cannot find module './src/App'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }())).default;\n    console.log(\"✅ Server hot reloaded App\");\n  })(__WEBPACK_OUTDATED_DEPENDENCIES__); });\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (app);\n\n//# sourceURL=webpack:///./server/app.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _cra_express_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @cra-express/core */ \"@cra-express/core\");\n/* harmony import */ var _cra_express_core__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_cra_express_core__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ \"react-router-dom\");\n/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_router_dom__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var react_dom_server__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-dom/server */ \"react-dom/server\");\n/* harmony import */ var react_dom_server__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_dom_server__WEBPACK_IMPORTED_MODULE_2__);\nfunction asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }\n\nfunction _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"next\", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"throw\", err); } _next(undefined); }); }; }\n\n/* eslint no-console: 0 */\n\n\n\n\nvar path = __webpack_require__(/*! path */ \"path\");\n\nvar React = __webpack_require__(/*! react */ \"react\");\n\nvar App = __webpack_require__(/*! ../src/App */ \"./src/App.js\").default;\n\nvar clientBuildPath = path.resolve(__dirname, \"../client\");\n\nfunction handleUniversalRender(_x, _x2) {\n  return _handleUniversalRender.apply(this, arguments);\n}\n\nfunction _handleUniversalRender() {\n  _handleUniversalRender = _asyncToGenerator(\n  /*#__PURE__*/\n  regeneratorRuntime.mark(function _callee(req, res) {\n    var context, stream;\n    return regeneratorRuntime.wrap(function _callee$(_context) {\n      while (1) {\n        switch (_context.prev = _context.next) {\n          case 0:\n            context = {};\n            stream = react_dom_server__WEBPACK_IMPORTED_MODULE_2___default.a.renderToNodeStream(React.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__[\"StaticRouter\"], {\n              location: req.url,\n              context: context\n            }, React.createElement(App, null)));\n\n            if (!context.url) {\n              _context.next = 5;\n              break;\n            }\n\n            res.redirect(301, context.url);\n            return _context.abrupt(\"return\", undefined);\n\n          case 5:\n            return _context.abrupt(\"return\", stream);\n\n          case 6:\n          case \"end\":\n            return _context.stop();\n        }\n      }\n    }, _callee, this);\n  }));\n  return _handleUniversalRender.apply(this, arguments);\n}\n\nvar app = Object(_cra_express_core__WEBPACK_IMPORTED_MODULE_0__[\"createReactAppExpress\"])({\n  clientBuildPath: clientBuildPath,\n  universalRender: handleUniversalRender\n});\n\nif (true) {\n  module.hot.accept(/*! ../src/App */ \"./src/App.js\", function(__WEBPACK_OUTDATED_DEPENDENCIES__) { (function () {\n    App = __webpack_require__(/*! ../src/App */ \"./src/App.js\").default;\n    console.log(\"✅ Server hot reloaded App\");\n  })(__WEBPACK_OUTDATED_DEPENDENCIES__); });\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (app);\n\n//# sourceURL=webpack:///./server/app.js?");
 
 /***/ }),
 
@@ -838,7 +904,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _cra
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("var app = __webpack_require__(/*! ./app */ \"./server/app.js\").default;\n\nvar PORT = process.env.PORT || 3001;\napp.listen(PORT, function () {\n  console.log(\"CRA Server listening on port \".concat(PORT, \"!\"));\n});\n\n//# sourceURL=webpack:///./server/index.js?");
+eval("/* eslint no-console: 0 */\nvar app = __webpack_require__(/*! ./app */ \"./server/app.js\").default;\n\nvar PORT = process.env.PORT || 3001;\napp.listen(PORT, function () {\n  console.log(\"CRA Server listening on port \".concat(PORT, \"!\"));\n});\n\n//# sourceURL=webpack:///./server/index.js?");
 
 /***/ }),
 
@@ -850,7 +916,7 @@ eval("var app = __webpack_require__(/*! ./app */ \"./server/app.js\").default;\n
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _views_Home__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./views/Home */ \"./src/views/Home/index.js\");\nfunction _typeof(obj) { if (typeof Symbol === \"function\" && typeof Symbol.iterator === \"symbol\") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === \"function\" && obj.constructor === Symbol && obj !== Symbol.prototype ? \"symbol\" : typeof obj; }; } return _typeof(obj); }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }\n\nfunction _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }\n\nfunction _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === \"object\" || typeof call === \"function\")) { return call; } return _assertThisInitialized(self); }\n\nfunction _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function\"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }\n\nfunction _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }\n\nfunction _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return self; }\n\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\n\nvar App =\n/*#__PURE__*/\nfunction (_Component) {\n  _inherits(App, _Component);\n\n  function App() {\n    var _getPrototypeOf2;\n\n    var _this;\n\n    _classCallCheck(this, App);\n\n    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {\n      args[_key] = arguments[_key];\n    }\n\n    _this = _possibleConstructorReturn(this, (_getPrototypeOf2 = _getPrototypeOf(App)).call.apply(_getPrototypeOf2, [this].concat(args)));\n\n    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), \"state\", {\n      coba: \"\"\n    });\n\n    return _this;\n  }\n\n  _createClass(App, [{\n    key: \"render\",\n    value: function render() {\n      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_Home__WEBPACK_IMPORTED_MODULE_1__[\"default\"], null);\n    }\n  }]);\n\n  return App;\n}(react__WEBPACK_IMPORTED_MODULE_0__[\"Component\"]);\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (App);\n\n//# sourceURL=webpack:///./src/App.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ \"react-router-dom\");\n/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_router_dom__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _views_Home__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./views/Home */ \"./src/views/Home/index.js\");\n/* harmony import */ var _views_Contact__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./views/Contact */ \"./src/views/Contact/index.js\");\n\n\n\n\n\nvar App = function App() {\n  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__[\"Switch\"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__[\"Route\"], {\n    exact: true,\n    path: \"/\",\n    component: _views_Home__WEBPACK_IMPORTED_MODULE_2__[\"default\"]\n  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__[\"Route\"], {\n    path: \"/contact\",\n    component: _views_Contact__WEBPACK_IMPORTED_MODULE_3__[\"default\"]\n  }));\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (App);\n\n//# sourceURL=webpack:///./src/App.js?");
 
 /***/ }),
 
@@ -884,7 +950,7 @@ eval("module.exports = \"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJAAAACQC
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ \"prop-types\");\n/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _Button_module_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Button.module.css */ \"./src/components/Common/Button/Button.module.css\");\n/* harmony import */ var _Button_module_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_Button_module_css__WEBPACK_IMPORTED_MODULE_2__);\n\n\n\n\nvar Home = function Home(_ref) {\n  var type = _ref.type,\n      classBtn = _ref.classBtn,\n      children = _ref.children;\n  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"button\", {\n    type: type,\n    className: classBtn === \"home\" ? _Button_module_css__WEBPACK_IMPORTED_MODULE_2___default.a.button_home : \"\"\n  }, children);\n};\n\nHome.propTypes = {\n  type: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string.isRequired\n};\n/* harmony default export */ __webpack_exports__[\"default\"] = (Home);\n\n//# sourceURL=webpack:///./src/components/Common/Button/Button.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ \"prop-types\");\n/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _Button_module_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Button.module.css */ \"./src/components/Common/Button/Button.module.css\");\n/* harmony import */ var _Button_module_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_Button_module_css__WEBPACK_IMPORTED_MODULE_2__);\n\n\n\n\nvar Home = function Home(_ref) {\n  var type = _ref.type,\n      classBtn = _ref.classBtn,\n      children = _ref.children;\n  var classes = \"\";\n\n  switch (classBtn) {\n    case \"submit\":\n      classes = _Button_module_css__WEBPACK_IMPORTED_MODULE_2___default.a.button_sumit;\n      break;\n\n    default:\n      classes = _Button_module_css__WEBPACK_IMPORTED_MODULE_2___default.a.button_home;\n      break;\n  }\n\n  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"button\", {\n    type: type,\n    className: classes\n  }, children);\n};\n\nHome.propTypes = {\n  type: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string.isRequired\n};\n/* harmony default export */ __webpack_exports__[\"default\"] = (Home);\n\n//# sourceURL=webpack:///./src/components/Common/Button/Button.js?");
 
 /***/ }),
 
@@ -908,6 +974,170 @@ eval("\n    var content = __webpack_require__(/*! !../../../../node_modules/cra-
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Button__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Button */ \"./src/components/Common/Button/Button.js\");\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_Button__WEBPACK_IMPORTED_MODULE_0__[\"default\"]);\n\n//# sourceURL=webpack:///./src/components/Common/Button/index.js?");
+
+/***/ }),
+
+/***/ "./src/components/Common/Footer/Footer.js":
+/*!************************************************!*\
+  !*** ./src/components/Common/Footer/Footer.js ***!
+  \************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _Footer_module_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Footer.module.css */ \"./src/components/Common/Footer/Footer.module.css\");\n/* harmony import */ var _Footer_module_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_Footer_module_css__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\nvar Footer = function Footer() {\n  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n    className: _Footer_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.footer\n  });\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Footer);\n\n//# sourceURL=webpack:///./src/components/Common/Footer/Footer.js?");
+
+/***/ }),
+
+/***/ "./src/components/Common/Footer/Footer.module.css":
+/*!********************************************************!*\
+  !*** ./src/components/Common/Footer/Footer.module.css ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("\n    var content = __webpack_require__(/*! !../../../../node_modules/cra-universal/node_modules/css-loader!./Footer.module.css */ \"./node_modules/cra-universal/node_modules/css-loader/index.js!./src/components/Common/Footer/Footer.module.css\");\n    var insertCss = __webpack_require__(/*! ../../../../node_modules/isomorphic-style-loader/lib/insertCss.js */ \"./node_modules/isomorphic-style-loader/lib/insertCss.js\");\n\n    if (typeof content === 'string') {\n      content = [[module.i, content, '']];\n    }\n\n    module.exports = content.locals || {};\n    module.exports._getContent = function() { return content; };\n    module.exports._getCss = function() { return content.toString(); };\n    module.exports._insertCss = function(options) { return insertCss(content, options) };\n    \n    // Hot Module Replacement\n    // https://webpack.github.io/docs/hot-module-replacement\n    // Only activated in browser context\n    if ( true && typeof window !== 'undefined' && window.document) {\n      var removeCss = function() {};\n      module.hot.accept(/*! !../../../../node_modules/cra-universal/node_modules/css-loader!./Footer.module.css */ \"./node_modules/cra-universal/node_modules/css-loader/index.js!./src/components/Common/Footer/Footer.module.css\", function() {\n        content = __webpack_require__(/*! !../../../../node_modules/cra-universal/node_modules/css-loader!./Footer.module.css */ \"./node_modules/cra-universal/node_modules/css-loader/index.js!./src/components/Common/Footer/Footer.module.css\");\n\n        if (typeof content === 'string') {\n          content = [[module.i, content, '']];\n        }\n\n        removeCss = insertCss(content, { replace: true });\n      });\n      module.hot.dispose(function() { removeCss(); });\n    }\n  \n\n//# sourceURL=webpack:///./src/components/Common/Footer/Footer.module.css?");
+
+/***/ }),
+
+/***/ "./src/components/Common/Footer/index.js":
+/*!***********************************************!*\
+  !*** ./src/components/Common/Footer/index.js ***!
+  \***********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Footer__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Footer */ \"./src/components/Common/Footer/Footer.js\");\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_Footer__WEBPACK_IMPORTED_MODULE_0__[\"default\"]);\n\n//# sourceURL=webpack:///./src/components/Common/Footer/index.js?");
+
+/***/ }),
+
+/***/ "./src/components/Common/Form/Form.js":
+/*!********************************************!*\
+  !*** ./src/components/Common/Form/Form.js ***!
+  \********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ \"prop-types\");\n/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\nvar Form = function Form(_ref) {\n  var className = _ref.className,\n      onSubmit = _ref.onSubmit,\n      children = _ref.children;\n  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n    className: className\n  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"form\", {\n    onSubmit: onSubmit\n  }, children));\n};\n\nForm.propTypes = {\n  className: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string,\n  onSubmit: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func.isRequired\n};\nForm.defaultProps = {\n  className: \"\"\n};\n/* harmony default export */ __webpack_exports__[\"default\"] = (Form);\n\n//# sourceURL=webpack:///./src/components/Common/Form/Form.js?");
+
+/***/ }),
+
+/***/ "./src/components/Common/Form/index.js":
+/*!*********************************************!*\
+  !*** ./src/components/Common/Form/index.js ***!
+  \*********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Form__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Form */ \"./src/components/Common/Form/Form.js\");\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_Form__WEBPACK_IMPORTED_MODULE_0__[\"default\"]);\n\n//# sourceURL=webpack:///./src/components/Common/Form/index.js?");
+
+/***/ }),
+
+/***/ "./src/components/Common/Input/Input.js":
+/*!**********************************************!*\
+  !*** ./src/components/Common/Input/Input.js ***!
+  \**********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ \"prop-types\");\n/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _Input_module_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Input.module.css */ \"./src/components/Common/Input/Input.module.css\");\n/* harmony import */ var _Input_module_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_Input_module_css__WEBPACK_IMPORTED_MODULE_2__);\n\n\n\n\nvar Input = function Input(_ref) {\n  var type = _ref.type,\n      name = _ref.name,\n      value = _ref.value,\n      onChange = _ref.onChange,\n      id = _ref.id;\n  var element = null;\n\n  switch (type) {\n    case \"text\":\n      element = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"input\", {\n        type: \"text\",\n        value: value,\n        id: id,\n        name: name,\n        onChange: onChange,\n        className: _Input_module_css__WEBPACK_IMPORTED_MODULE_2___default.a.input\n      });\n      break;\n\n    case \"textarea\":\n      element = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"textarea\", {\n        value: value,\n        id: id,\n        name: name,\n        onChange: onChange,\n        className: _Input_module_css__WEBPACK_IMPORTED_MODULE_2___default.a.input,\n        rows: 10,\n        style: {\n          height: \"100px\"\n        }\n      });\n      break;\n\n    case \"email\":\n      element = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"input\", {\n        type: \"email\",\n        value: value,\n        name: name,\n        onChange: onChange,\n        className: _Input_module_css__WEBPACK_IMPORTED_MODULE_2___default.a.input\n      });\n      break;\n\n    default:\n      element = null;\n      break;\n  }\n\n  return element;\n};\n\nInput.propTypes = {\n  type: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string.isRequired,\n  name: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string.isRequired,\n  value: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string.isRequired,\n  onChange: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func.isRequired,\n  id: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string.isRequired\n};\n/* harmony default export */ __webpack_exports__[\"default\"] = (Input);\n\n//# sourceURL=webpack:///./src/components/Common/Input/Input.js?");
+
+/***/ }),
+
+/***/ "./src/components/Common/Input/Input.module.css":
+/*!******************************************************!*\
+  !*** ./src/components/Common/Input/Input.module.css ***!
+  \******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("\n    var content = __webpack_require__(/*! !../../../../node_modules/cra-universal/node_modules/css-loader!./Input.module.css */ \"./node_modules/cra-universal/node_modules/css-loader/index.js!./src/components/Common/Input/Input.module.css\");\n    var insertCss = __webpack_require__(/*! ../../../../node_modules/isomorphic-style-loader/lib/insertCss.js */ \"./node_modules/isomorphic-style-loader/lib/insertCss.js\");\n\n    if (typeof content === 'string') {\n      content = [[module.i, content, '']];\n    }\n\n    module.exports = content.locals || {};\n    module.exports._getContent = function() { return content; };\n    module.exports._getCss = function() { return content.toString(); };\n    module.exports._insertCss = function(options) { return insertCss(content, options) };\n    \n    // Hot Module Replacement\n    // https://webpack.github.io/docs/hot-module-replacement\n    // Only activated in browser context\n    if ( true && typeof window !== 'undefined' && window.document) {\n      var removeCss = function() {};\n      module.hot.accept(/*! !../../../../node_modules/cra-universal/node_modules/css-loader!./Input.module.css */ \"./node_modules/cra-universal/node_modules/css-loader/index.js!./src/components/Common/Input/Input.module.css\", function() {\n        content = __webpack_require__(/*! !../../../../node_modules/cra-universal/node_modules/css-loader!./Input.module.css */ \"./node_modules/cra-universal/node_modules/css-loader/index.js!./src/components/Common/Input/Input.module.css\");\n\n        if (typeof content === 'string') {\n          content = [[module.i, content, '']];\n        }\n\n        removeCss = insertCss(content, { replace: true });\n      });\n      module.hot.dispose(function() { removeCss(); });\n    }\n  \n\n//# sourceURL=webpack:///./src/components/Common/Input/Input.module.css?");
+
+/***/ }),
+
+/***/ "./src/components/Common/Input/index.js":
+/*!**********************************************!*\
+  !*** ./src/components/Common/Input/index.js ***!
+  \**********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Input__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Input */ \"./src/components/Common/Input/Input.js\");\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_Input__WEBPACK_IMPORTED_MODULE_0__[\"default\"]);\n\n//# sourceURL=webpack:///./src/components/Common/Input/index.js?");
+
+/***/ }),
+
+/***/ "./src/components/Common/Navbar/Navbar.js":
+/*!************************************************!*\
+  !*** ./src/components/Common/Navbar/Navbar.js ***!
+  \************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _Navbar_module_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Navbar.module.css */ \"./src/components/Common/Navbar/Navbar.module.css\");\n/* harmony import */ var _Navbar_module_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_Navbar_module_css__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _NavbarItem__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./NavbarItem */ \"./src/components/Common/Navbar/NavbarItem/index.js\");\n\n\n\n\nvar Navbar = function Navbar() {\n  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"nav\", {\n    className: _Navbar_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.navbar_container\n  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"ul\", {\n    className: _Navbar_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.navbar_list\n  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_NavbarItem__WEBPACK_IMPORTED_MODULE_2__[\"default\"], null)));\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Navbar);\n\n//# sourceURL=webpack:///./src/components/Common/Navbar/Navbar.js?");
+
+/***/ }),
+
+/***/ "./src/components/Common/Navbar/Navbar.module.css":
+/*!********************************************************!*\
+  !*** ./src/components/Common/Navbar/Navbar.module.css ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("\n    var content = __webpack_require__(/*! !../../../../node_modules/cra-universal/node_modules/css-loader!./Navbar.module.css */ \"./node_modules/cra-universal/node_modules/css-loader/index.js!./src/components/Common/Navbar/Navbar.module.css\");\n    var insertCss = __webpack_require__(/*! ../../../../node_modules/isomorphic-style-loader/lib/insertCss.js */ \"./node_modules/isomorphic-style-loader/lib/insertCss.js\");\n\n    if (typeof content === 'string') {\n      content = [[module.i, content, '']];\n    }\n\n    module.exports = content.locals || {};\n    module.exports._getContent = function() { return content; };\n    module.exports._getCss = function() { return content.toString(); };\n    module.exports._insertCss = function(options) { return insertCss(content, options) };\n    \n    // Hot Module Replacement\n    // https://webpack.github.io/docs/hot-module-replacement\n    // Only activated in browser context\n    if ( true && typeof window !== 'undefined' && window.document) {\n      var removeCss = function() {};\n      module.hot.accept(/*! !../../../../node_modules/cra-universal/node_modules/css-loader!./Navbar.module.css */ \"./node_modules/cra-universal/node_modules/css-loader/index.js!./src/components/Common/Navbar/Navbar.module.css\", function() {\n        content = __webpack_require__(/*! !../../../../node_modules/cra-universal/node_modules/css-loader!./Navbar.module.css */ \"./node_modules/cra-universal/node_modules/css-loader/index.js!./src/components/Common/Navbar/Navbar.module.css\");\n\n        if (typeof content === 'string') {\n          content = [[module.i, content, '']];\n        }\n\n        removeCss = insertCss(content, { replace: true });\n      });\n      module.hot.dispose(function() { removeCss(); });\n    }\n  \n\n//# sourceURL=webpack:///./src/components/Common/Navbar/Navbar.module.css?");
+
+/***/ }),
+
+/***/ "./src/components/Common/Navbar/NavbarItem/NavbarItem.js":
+/*!***************************************************************!*\
+  !*** ./src/components/Common/Navbar/NavbarItem/NavbarItem.js ***!
+  \***************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ \"react-router-dom\");\n/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_router_dom__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _NavbarItem_module_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./NavbarItem.module.css */ \"./src/components/Common/Navbar/NavbarItem/NavbarItem.module.css\");\n/* harmony import */ var _NavbarItem_module_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_NavbarItem_module_css__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _assets_images_logo_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../assets/images/logo.png */ \"./src/assets/images/logo.png\");\n/* harmony import */ var _assets_images_logo_png__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_assets_images_logo_png__WEBPACK_IMPORTED_MODULE_3__);\n\n\n\n\n\nvar NavbarItem = function NavbarItem() {\n  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0__[\"Fragment\"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"li\", {\n    className: _NavbarItem_module_css__WEBPACK_IMPORTED_MODULE_2___default.a.navbaritem\n  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n    className: _NavbarItem_module_css__WEBPACK_IMPORTED_MODULE_2___default.a.navbaritem_brand_wrapper\n  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"img\", {\n    src: _assets_images_logo_png__WEBPACK_IMPORTED_MODULE_3___default.a,\n    alt: \"Finendisgn Logo\",\n    className: _NavbarItem_module_css__WEBPACK_IMPORTED_MODULE_2___default.a.navbaritem_brand_logo\n  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"li\", {\n    className: _NavbarItem_module_css__WEBPACK_IMPORTED_MODULE_2___default.a.navbaritem\n  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__[\"NavLink\"], {\n    exact: true,\n    activeClassName: _NavbarItem_module_css__WEBPACK_IMPORTED_MODULE_2___default.a.navitem_active,\n    to: \"/contact\"\n  }, \"CONTACT\")));\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (NavbarItem);\n\n//# sourceURL=webpack:///./src/components/Common/Navbar/NavbarItem/NavbarItem.js?");
+
+/***/ }),
+
+/***/ "./src/components/Common/Navbar/NavbarItem/NavbarItem.module.css":
+/*!***********************************************************************!*\
+  !*** ./src/components/Common/Navbar/NavbarItem/NavbarItem.module.css ***!
+  \***********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("\n    var content = __webpack_require__(/*! !../../../../../node_modules/cra-universal/node_modules/css-loader!./NavbarItem.module.css */ \"./node_modules/cra-universal/node_modules/css-loader/index.js!./src/components/Common/Navbar/NavbarItem/NavbarItem.module.css\");\n    var insertCss = __webpack_require__(/*! ../../../../../node_modules/isomorphic-style-loader/lib/insertCss.js */ \"./node_modules/isomorphic-style-loader/lib/insertCss.js\");\n\n    if (typeof content === 'string') {\n      content = [[module.i, content, '']];\n    }\n\n    module.exports = content.locals || {};\n    module.exports._getContent = function() { return content; };\n    module.exports._getCss = function() { return content.toString(); };\n    module.exports._insertCss = function(options) { return insertCss(content, options) };\n    \n    // Hot Module Replacement\n    // https://webpack.github.io/docs/hot-module-replacement\n    // Only activated in browser context\n    if ( true && typeof window !== 'undefined' && window.document) {\n      var removeCss = function() {};\n      module.hot.accept(/*! !../../../../../node_modules/cra-universal/node_modules/css-loader!./NavbarItem.module.css */ \"./node_modules/cra-universal/node_modules/css-loader/index.js!./src/components/Common/Navbar/NavbarItem/NavbarItem.module.css\", function() {\n        content = __webpack_require__(/*! !../../../../../node_modules/cra-universal/node_modules/css-loader!./NavbarItem.module.css */ \"./node_modules/cra-universal/node_modules/css-loader/index.js!./src/components/Common/Navbar/NavbarItem/NavbarItem.module.css\");\n\n        if (typeof content === 'string') {\n          content = [[module.i, content, '']];\n        }\n\n        removeCss = insertCss(content, { replace: true });\n      });\n      module.hot.dispose(function() { removeCss(); });\n    }\n  \n\n//# sourceURL=webpack:///./src/components/Common/Navbar/NavbarItem/NavbarItem.module.css?");
+
+/***/ }),
+
+/***/ "./src/components/Common/Navbar/NavbarItem/index.js":
+/*!**********************************************************!*\
+  !*** ./src/components/Common/Navbar/NavbarItem/index.js ***!
+  \**********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _NavbarItem__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./NavbarItem */ \"./src/components/Common/Navbar/NavbarItem/NavbarItem.js\");\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_NavbarItem__WEBPACK_IMPORTED_MODULE_0__[\"default\"]);\n\n//# sourceURL=webpack:///./src/components/Common/Navbar/NavbarItem/index.js?");
+
+/***/ }),
+
+/***/ "./src/components/Common/Navbar/index.js":
+/*!***********************************************!*\
+  !*** ./src/components/Common/Navbar/index.js ***!
+  \***********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Navbar__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Navbar */ \"./src/components/Common/Navbar/Navbar.js\");\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_Navbar__WEBPACK_IMPORTED_MODULE_0__[\"default\"]);\n\n//# sourceURL=webpack:///./src/components/Common/Navbar/index.js?");
 
 /***/ }),
 
@@ -943,6 +1173,76 @@ eval("\n    var content = __webpack_require__(/*! !../../../node_modules/cra-uni
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _ImageLoader__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ImageLoader */ \"./src/components/ImageLoader/ImageLoader.js\");\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_ImageLoader__WEBPACK_IMPORTED_MODULE_0__[\"default\"]);\n\n//# sourceURL=webpack:///./src/components/ImageLoader/index.js?");
+
+/***/ }),
+
+/***/ "./src/components/Layout/Layout.js":
+/*!*****************************************!*\
+  !*** ./src/components/Layout/Layout.js ***!
+  \*****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _Common_Navbar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Common/Navbar */ \"./src/components/Common/Navbar/index.js\");\n/* harmony import */ var _Common_Footer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../Common/Footer */ \"./src/components/Common/Footer/index.js\");\n/* harmony import */ var _Layout_module_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Layout.module.css */ \"./src/components/Layout/Layout.module.css\");\n/* harmony import */ var _Layout_module_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_Layout_module_css__WEBPACK_IMPORTED_MODULE_3__);\nfunction _typeof(obj) { if (typeof Symbol === \"function\" && typeof Symbol.iterator === \"symbol\") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === \"function\" && obj.constructor === Symbol && obj !== Symbol.prototype ? \"symbol\" : typeof obj; }; } return _typeof(obj); }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }\n\nfunction _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }\n\nfunction _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === \"object\" || typeof call === \"function\")) { return call; } return _assertThisInitialized(self); }\n\nfunction _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function\"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }\n\nfunction _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }\n\nfunction _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return self; }\n\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\n\n\n\nvar Layout =\n/*#__PURE__*/\nfunction (_Component) {\n  _inherits(Layout, _Component);\n\n  function Layout() {\n    var _getPrototypeOf2;\n\n    var _this;\n\n    _classCallCheck(this, Layout);\n\n    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {\n      args[_key] = arguments[_key];\n    }\n\n    _this = _possibleConstructorReturn(this, (_getPrototypeOf2 = _getPrototypeOf(Layout)).call.apply(_getPrototypeOf2, [this].concat(args)));\n\n    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), \"state\", {\n      classes: [_Layout_module_css__WEBPACK_IMPORTED_MODULE_3___default.a.layout_container]\n    });\n\n    return _this;\n  }\n\n  _createClass(Layout, [{\n    key: \"componentDidMount\",\n    value: function componentDidMount() {\n      var classes = [_Layout_module_css__WEBPACK_IMPORTED_MODULE_3___default.a.layout_container, _Layout_module_css__WEBPACK_IMPORTED_MODULE_3___default.a.layout_container_loaded];\n      this.setState({\n        classes: classes\n      });\n    }\n  }, {\n    key: \"render\",\n    value: function render() {\n      var classes = this.state.classes;\n      var children = this.props.children;\n      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0__[\"Fragment\"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n        className: classes.join(\" \")\n      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Common_Navbar__WEBPACK_IMPORTED_MODULE_1__[\"default\"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"section\", {\n        className: _Layout_module_css__WEBPACK_IMPORTED_MODULE_3___default.a.layout_main_container\n      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n        className: _Layout_module_css__WEBPACK_IMPORTED_MODULE_3___default.a.layout_main_wrapper\n      }, children)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Common_Footer__WEBPACK_IMPORTED_MODULE_2__[\"default\"], null)));\n    }\n  }]);\n\n  return Layout;\n}(react__WEBPACK_IMPORTED_MODULE_0__[\"Component\"]);\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Layout);\n\n//# sourceURL=webpack:///./src/components/Layout/Layout.js?");
+
+/***/ }),
+
+/***/ "./src/components/Layout/Layout.module.css":
+/*!*************************************************!*\
+  !*** ./src/components/Layout/Layout.module.css ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("\n    var content = __webpack_require__(/*! !../../../node_modules/cra-universal/node_modules/css-loader!./Layout.module.css */ \"./node_modules/cra-universal/node_modules/css-loader/index.js!./src/components/Layout/Layout.module.css\");\n    var insertCss = __webpack_require__(/*! ../../../node_modules/isomorphic-style-loader/lib/insertCss.js */ \"./node_modules/isomorphic-style-loader/lib/insertCss.js\");\n\n    if (typeof content === 'string') {\n      content = [[module.i, content, '']];\n    }\n\n    module.exports = content.locals || {};\n    module.exports._getContent = function() { return content; };\n    module.exports._getCss = function() { return content.toString(); };\n    module.exports._insertCss = function(options) { return insertCss(content, options) };\n    \n    // Hot Module Replacement\n    // https://webpack.github.io/docs/hot-module-replacement\n    // Only activated in browser context\n    if ( true && typeof window !== 'undefined' && window.document) {\n      var removeCss = function() {};\n      module.hot.accept(/*! !../../../node_modules/cra-universal/node_modules/css-loader!./Layout.module.css */ \"./node_modules/cra-universal/node_modules/css-loader/index.js!./src/components/Layout/Layout.module.css\", function() {\n        content = __webpack_require__(/*! !../../../node_modules/cra-universal/node_modules/css-loader!./Layout.module.css */ \"./node_modules/cra-universal/node_modules/css-loader/index.js!./src/components/Layout/Layout.module.css\");\n\n        if (typeof content === 'string') {\n          content = [[module.i, content, '']];\n        }\n\n        removeCss = insertCss(content, { replace: true });\n      });\n      module.hot.dispose(function() { removeCss(); });\n    }\n  \n\n//# sourceURL=webpack:///./src/components/Layout/Layout.module.css?");
+
+/***/ }),
+
+/***/ "./src/components/Layout/index.js":
+/*!****************************************!*\
+  !*** ./src/components/Layout/index.js ***!
+  \****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Layout__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Layout */ \"./src/components/Layout/Layout.js\");\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_Layout__WEBPACK_IMPORTED_MODULE_0__[\"default\"]);\n\n//# sourceURL=webpack:///./src/components/Layout/index.js?");
+
+/***/ }),
+
+/***/ "./src/views/Contact/Contact.js":
+/*!**************************************!*\
+  !*** ./src/views/Contact/Contact.js ***!
+  \**************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/Layout */ \"./src/components/Layout/index.js\");\n/* harmony import */ var _Contact_module_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Contact.module.css */ \"./src/views/Contact/Contact.module.css\");\n/* harmony import */ var _Contact_module_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_Contact_module_css__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _components_Common_Form__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components/Common/Form */ \"./src/components/Common/Form/index.js\");\n/* harmony import */ var _components_Common_Input__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../components/Common/Input */ \"./src/components/Common/Input/index.js\");\n/* harmony import */ var _components_Common_Button__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../components/Common/Button */ \"./src/components/Common/Button/index.js\");\nfunction _typeof(obj) { if (typeof Symbol === \"function\" && typeof Symbol.iterator === \"symbol\") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === \"function\" && obj.constructor === Symbol && obj !== Symbol.prototype ? \"symbol\" : typeof obj; }; } return _typeof(obj); }\n\nfunction _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; var ownKeys = Object.keys(source); if (typeof Object.getOwnPropertySymbols === 'function') { ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) { return Object.getOwnPropertyDescriptor(source, sym).enumerable; })); } ownKeys.forEach(function (key) { _defineProperty(target, key, source[key]); }); } return target; }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }\n\nfunction _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }\n\nfunction _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === \"object\" || typeof call === \"function\")) { return call; } return _assertThisInitialized(self); }\n\nfunction _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function\"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }\n\nfunction _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }\n\nfunction _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return self; }\n\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n/* eslint react/jsx-one-expression-per-line: 0*/\n\n\n\n\n\n\n\nvar Contact =\n/*#__PURE__*/\nfunction (_Component) {\n  _inherits(Contact, _Component);\n\n  function Contact() {\n    var _getPrototypeOf2;\n\n    var _this;\n\n    _classCallCheck(this, Contact);\n\n    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {\n      args[_key] = arguments[_key];\n    }\n\n    _this = _possibleConstructorReturn(this, (_getPrototypeOf2 = _getPrototypeOf(Contact)).call.apply(_getPrototypeOf2, [this].concat(args)));\n\n    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), \"state\", {\n      form: {\n        fname: \"\",\n        lname: \"\",\n        email: \"\",\n        subject: \"\",\n        message: \"\"\n      },\n      isSubmitting: false\n    });\n\n    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), \"handleSubmit\", function (e) {\n      e.preventDefault();\n      var isSubmitting = _this.state.isSubmitting;\n\n      _this.setState({\n        isSubmitting: !isSubmitting\n      });\n\n      setTimeout(function () {\n        return _this.setState({\n          isSubmitting: false\n        });\n      }, 3000);\n    });\n\n    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), \"handleChange\", function (e) {\n      e.preventDefault();\n      var _e$target = e.target,\n          value = _e$target.value,\n          name = _e$target.name;\n\n      _this.setState(function (prevState) {\n        return {\n          form: _objectSpread({}, prevState.form, _defineProperty({}, name, value))\n        };\n      });\n    });\n\n    return _this;\n  }\n\n  _createClass(Contact, [{\n    key: \"render\",\n    value: function render() {\n      var _this$state = this.state,\n          form = _this$state.form,\n          isSubmitting = _this$state.isSubmitting;\n      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Layout__WEBPACK_IMPORTED_MODULE_1__[\"default\"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n        className: _Contact_module_css__WEBPACK_IMPORTED_MODULE_2___default.a.contact_container\n      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n        className: _Contact_module_css__WEBPACK_IMPORTED_MODULE_2___default.a.contact_info\n      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"h2\", {\n        className: _Contact_module_css__WEBPACK_IMPORTED_MODULE_2___default.a.contact_title\n      }, \"CONTACT ME\"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"p\", null, \"Mail / Deliveries: Dan Mumford, Studio 100, Top Floor, 100 De Beauvoir Road, London N1 4EN\"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"p\", null, \"Email:\\xA0\", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"a\", {\n        href: \"mailto:danmumforddraws@gmail.com\",\n        target: \"_top\"\n      }, \"danmumforddraws@gmail.com\")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"p\", null, \"You can follow Dan on \", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"a\", {\n        href: \"https://www.instagram.com/miqdad_af/\"\n      }, \" Instagram \"), \", \", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"a\", {\n        href: \"https://twitter/mqdfwz\"\n      }, \"Twitter\"), \" and \", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"a\", {\n        href: \"https://www.facebook.com/miqdad.fawwaz\"\n      }, \" Facebook \"), \".\")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n        className: _Contact_module_css__WEBPACK_IMPORTED_MODULE_2___default.a.contact_form\n      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Common_Form__WEBPACK_IMPORTED_MODULE_3__[\"default\"], {\n        onSubmit: this.handleSubmit,\n        className: _Contact_module_css__WEBPACK_IMPORTED_MODULE_2___default.a.contact_form_container\n      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"p\", null, \"Name *\"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n        className: _Contact_module_css__WEBPACK_IMPORTED_MODULE_2___default.a.contact_form_name\n      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n        className: _Contact_module_css__WEBPACK_IMPORTED_MODULE_2___default.a.contact_form_fname\n      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"label\", {\n        htmlFor: \"fname\"\n      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Common_Input__WEBPACK_IMPORTED_MODULE_4__[\"default\"], {\n        type: \"text\",\n        name: \"fname\",\n        id: \"fname\",\n        value: form.fname,\n        onChange: this.handleChange\n      }), \"First Name\")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n        className: _Contact_module_css__WEBPACK_IMPORTED_MODULE_2___default.a.contact_form_lname\n      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"label\", {\n        htmlFor: \"lname\"\n      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Common_Input__WEBPACK_IMPORTED_MODULE_4__[\"default\"], {\n        type: \"text\",\n        name: \"lname\",\n        id: \"lname\",\n        value: form.lname,\n        onChange: this.handleChange\n      }), \"Last Name\"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"p\", null, \"Email Address *\"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Common_Input__WEBPACK_IMPORTED_MODULE_4__[\"default\"], {\n        type: \"email\",\n        name: \"email\",\n        id: \"email\",\n        value: form.email,\n        onChange: this.handleChange\n      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"p\", null, \"Subject *\"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Common_Input__WEBPACK_IMPORTED_MODULE_4__[\"default\"], {\n        type: \"text\",\n        name: \"subject\",\n        id: \"subject\",\n        value: form.subject,\n        onChange: this.handleChange\n      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"p\", null, \"Message *\"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Common_Input__WEBPACK_IMPORTED_MODULE_4__[\"default\"], {\n        type: \"textarea\",\n        name: \"message\",\n        id: \"message\",\n        value: form.message,\n        onChange: this.handleChange\n      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Common_Button__WEBPACK_IMPORTED_MODULE_5__[\"default\"], {\n        type: \"submit\",\n        classBtn: \"submit\"\n      }, isSubmitting ? \"SUBMITTING...\" : \"SUBMIT\")))));\n    }\n  }]);\n\n  return Contact;\n}(react__WEBPACK_IMPORTED_MODULE_0__[\"Component\"]);\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Contact);\n\n//# sourceURL=webpack:///./src/views/Contact/Contact.js?");
+
+/***/ }),
+
+/***/ "./src/views/Contact/Contact.module.css":
+/*!**********************************************!*\
+  !*** ./src/views/Contact/Contact.module.css ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("\n    var content = __webpack_require__(/*! !../../../node_modules/cra-universal/node_modules/css-loader!./Contact.module.css */ \"./node_modules/cra-universal/node_modules/css-loader/index.js!./src/views/Contact/Contact.module.css\");\n    var insertCss = __webpack_require__(/*! ../../../node_modules/isomorphic-style-loader/lib/insertCss.js */ \"./node_modules/isomorphic-style-loader/lib/insertCss.js\");\n\n    if (typeof content === 'string') {\n      content = [[module.i, content, '']];\n    }\n\n    module.exports = content.locals || {};\n    module.exports._getContent = function() { return content; };\n    module.exports._getCss = function() { return content.toString(); };\n    module.exports._insertCss = function(options) { return insertCss(content, options) };\n    \n    // Hot Module Replacement\n    // https://webpack.github.io/docs/hot-module-replacement\n    // Only activated in browser context\n    if ( true && typeof window !== 'undefined' && window.document) {\n      var removeCss = function() {};\n      module.hot.accept(/*! !../../../node_modules/cra-universal/node_modules/css-loader!./Contact.module.css */ \"./node_modules/cra-universal/node_modules/css-loader/index.js!./src/views/Contact/Contact.module.css\", function() {\n        content = __webpack_require__(/*! !../../../node_modules/cra-universal/node_modules/css-loader!./Contact.module.css */ \"./node_modules/cra-universal/node_modules/css-loader/index.js!./src/views/Contact/Contact.module.css\");\n\n        if (typeof content === 'string') {\n          content = [[module.i, content, '']];\n        }\n\n        removeCss = insertCss(content, { replace: true });\n      });\n      module.hot.dispose(function() { removeCss(); });\n    }\n  \n\n//# sourceURL=webpack:///./src/views/Contact/Contact.module.css?");
+
+/***/ }),
+
+/***/ "./src/views/Contact/index.js":
+/*!************************************!*\
+  !*** ./src/views/Contact/index.js ***!
+  \************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Contact__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Contact */ \"./src/views/Contact/Contact.js\");\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_Contact__WEBPACK_IMPORTED_MODULE_0__[\"default\"]);\n\n//# sourceURL=webpack:///./src/views/Contact/index.js?");
 
 /***/ }),
 
@@ -1055,6 +1355,28 @@ eval("module.exports = require(\"prop-types\");\n\n//# sourceURL=webpack:///exte
 /***/ (function(module, exports) {
 
 eval("module.exports = require(\"react\");\n\n//# sourceURL=webpack:///external_%22react%22?");
+
+/***/ }),
+
+/***/ "react-dom/server":
+/*!***********************************!*\
+  !*** external "react-dom/server" ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("module.exports = require(\"react-dom/server\");\n\n//# sourceURL=webpack:///external_%22react-dom/server%22?");
+
+/***/ }),
+
+/***/ "react-router-dom":
+/*!***********************************!*\
+  !*** external "react-router-dom" ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("module.exports = require(\"react-router-dom\");\n\n//# sourceURL=webpack:///external_%22react-router-dom%22?");
 
 /***/ }),
 
