@@ -6,13 +6,13 @@ import Logo from "../../../../assets/images/logo.png";
 const NavbarItem = () => (
     <Fragment>
         <li className={styles.navbaritem}>
-            <div className={styles.navbaritem_brand_wrapper}>
+            <NavLink to="/" className={styles.navbaritem_brand_wrapper}>
                 <img
                     src={Logo}
                     alt="Finendisgn Logo"
                     className={styles.navbaritem_brand_logo}
                 />
-            </div>
+            </NavLink>
         </li>
         <li className={styles.navbaritem}>
             <NavLink exact activeClassName={styles.navitem_active} to="/contact">CONTACT</NavLink>
