@@ -117,6 +117,8 @@
                 "aspects": ["noHref", "invalidHref", "preferButton"]
             }
         ],
+        "jsx-a11y/label-has-associated-control": ["off"],
+        "jsx-a11y/label-has-for": ["off"],
         "react/no-array-index-key": ["off"],
         "react/sort-comp": [
             "error",
