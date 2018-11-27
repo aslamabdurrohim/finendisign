@@ -26,7 +26,7 @@ const Input = ({ type, name, value, onChange, id }) => {
                     onChange={onChange}
                     className={styles.input}
                     rows={10}
-                    style={{ height: "100px" }}
+                    style={{ height: "100px", resize: "vertical" }}
                 />
             );
             break;

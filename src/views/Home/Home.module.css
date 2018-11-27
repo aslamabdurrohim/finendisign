@@ -41,6 +41,9 @@
     font-size: 4rem;
     color: #fff;
     font-weight: 400;
+    margin: 0;
+    letter-spacing: normal;
+    text-transform: lowercase;
 }
 
 .home_logo_wrapper {
