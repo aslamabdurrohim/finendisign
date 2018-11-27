@@ -5,6 +5,7 @@
     font-weight: 400;
     padding: 12px;
     font-size: 14px;
+    border: none;
 }
 
 .input:focus {

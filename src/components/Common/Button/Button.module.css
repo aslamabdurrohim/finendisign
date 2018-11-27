@@ -30,7 +30,7 @@
 }
 
 .button_home:focus,
-.button_sumit:focus {
+.button_submit:focus {
     outline: none;
 }
 
