@@ -10,7 +10,7 @@
     cursor: pointer;
 }
 
-.button_sumit {
+.button_submit {
     background: #292929;
     border-color: #292929;
     border-radius: 300px;
@@ -21,6 +21,8 @@
     font: inherit;
     font-size: 14px;
     height: 42px;
+    width: auto;
+    padding: 0.8rem;
     font-stretch: 100%;
     letter-spacing: 2px;
     line-height: 14px;

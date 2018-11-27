@@ -47,15 +47,14 @@ class Contact extends Component {
                 <div className={styles.contact_container}>
                     <div className={styles.contact_info}>
                         <h2 className={styles.contact_title}>CONTACT ME</h2>
-                        <p>Mail / Deliveries: Dan Mumford, Studio 100, Top Floor, 100 De Beauvoir Road, London N1 4EN</p>
                         <p>
                             Email:&nbsp;
-                            <a href="mailto:danmumforddraws@gmail.com" target="_top">
-                                danmumforddraws@gmail.com
+                            <a href="mailto:finendi11@gmail.com" target="_top">
+                                finendi11@gmail.com
                             </a>
                         </p>
                         <p>
-                            You can follow Dan on <a href="https://www.instagram.com/miqdad_af/"> Instagram </a>, <a href="https://twitter/mqdfwz">Twitter</a> and <a href="https://www.facebook.com/miqdad.fawwaz"> Facebook </a>.
+                            You can follow Finendi on <a href="https://www.instagram.com/miqdad_af/"> Instagram</a>, <a href="https://twitter/mqdfwz">Twitter</a> and <a href="https://www.facebook.com/miqdad.fawwaz"> Facebook</a>.
                         </p>
                     </div>
                     <div className={styles.contact_form}>

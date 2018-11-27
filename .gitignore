@@ -67,5 +67,5 @@ typings/
 .DS_Store
 
 # server-build
-server-build
+server-build/
 server-build/.hot

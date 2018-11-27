@@ -41,14 +41,6 @@
     margin: 0;
 }
 
-.contact_title {
-    font-weight: 600;
-    letter-spacing: 3.5px;
-    line-height: 1.2em;
-    margin-top: 0;
-    text-transform: uppercase;
-}
-
 .contact_form_fname,
 .contact_form_lname {
     width: 48%;
