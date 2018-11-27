@@ -39,3 +39,22 @@ a.navbaritem_brand_wrapper:visited {
     width: 100%;
     height: auto;
 }
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .navbaritem {
+        font-size: 15px;
+        margin: 12px;
+        text-align: center;
+    }
+
+    .navbaritem a {
+        color: #fff; 
+    }
+
+    .navbaritem a:hover,
+    a.navitem_active {
+        color: #fff;
+        border-bottom-color: #fff;
+        height: 18px;
+    }
+}
