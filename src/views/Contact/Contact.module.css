@@ -52,3 +52,23 @@
     flex-flow: column nowrap;
     font-size: 10px;
 }
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .contact_container {
+        flex-flow: column nowrap;
+    }
+
+    .contact_container p {
+        font-size: 15px;
+    }
+
+    .contact_info {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .contact_form {
+        margin: 0;
+    }
+    
+}
