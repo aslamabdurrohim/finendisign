@@ -5,10 +5,32 @@
     align-items: center;
     background: #fff;
     position: fixed;
-    width: 100vw;
+    width: 100%;
     bottom: 0;
     left: 0;
     z-index: 99;
+    padding: 0.5rem;
+}
+
+.footer_logos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer_logos > div {
+    background: #6E6E6E;
+    border-radius: 50%;
+    margin-right: 0.8rem;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_logos a:hover {
+    border-bottom-color: transparent; 
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {

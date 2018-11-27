@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { NavLink } from "react-router-dom";
 import styles from "./Navbar.module.css";
 import NavbarItem from "./NavbarItem";
 import ImageLoader from "../../ImageLoader";
@@ -33,12 +34,14 @@ class Navbar extends Component {
                         <div className={styles.navbar_mobile_bar} />
                         <div className={styles.navbar_mobile_bar} />
                     </div>
-                    <div className={styles.navbar_mobile_list} style={{ display: isNavMobileClicked ? "none" : "block" }}>
+                    <div className={styles.navbar_mobile_list} style={{ maxHeight: isNavMobileClicked ? "0" : "20rem" }}>
                         <NavbarItem />
                     </div>
                     <div className={styles.navbar_mobile_brand_container}>
                         <div className={styles.navbar_mobile_brand}>
-                            <ImageLoader srcLoaded={Logo} srcPreloaded={Logo} />
+                            <NavLink to="/">
+                                <ImageLoader srcLoaded={Logo} srcPreloaded={Logo} />
+                            </NavLink>
                         </div>
                     </div>
                 </div>
