@@ -22,7 +22,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "1f33c24659f5e4563bd5";
+/******/ 	var hotCurrentHash = "a414d4b4a0837e31cdef";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -836,7 +836,7 @@ eval("exports = module.exports = __webpack_require__(/*! ../../../node_modules/c
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("exports = module.exports = __webpack_require__(/*! ../../../node_modules/cra-universal/node_modules/css-loader/lib/css-base.js */ \"./node_modules/cra-universal/node_modules/css-loader/lib/css-base.js\")(false);\n// imports\n\n\n// module\nexports.push([module.i, \".about_container {\\n    display: flex;\\n    justify-content: space-between;\\n    margin-bottom: 5rem;\\n}\\n\\n.about_title {\\n    width: 50%;\\n}\\n\\n.about_info {\\n    width: 100%;\\n}\\n\\n.about_photo {\\n    margin-left: 2rem;\\n    width: 100%;\\n}\\n\\n.about_photo_container {\\n    width: 480px;\\n    height: 265px;\\n}\", \"\"]);\n\n// exports\n\n\n//# sourceURL=webpack:///./src/views/About/About.module.css?./node_modules/cra-universal/node_modules/css-loader");
+eval("exports = module.exports = __webpack_require__(/*! ../../../node_modules/cra-universal/node_modules/css-loader/lib/css-base.js */ \"./node_modules/cra-universal/node_modules/css-loader/lib/css-base.js\")(false);\n// imports\n\n\n// module\nexports.push([module.i, \".about_container {\\n    display: flex;\\n    justify-content: space-between;\\n    margin-bottom: 5rem;\\n}\\n\\n.about_title {\\n    width: 50%;\\n}\\n\\n.about_info {\\n    width: 100%;\\n}\\n\\n.about_photo {\\n    margin-left: 2rem;\\n    width: 100%;\\n}\\n\\n.about_photo_container {\\n    width: 480px;\\n    height: 265px;\\n}\\n\\n\\n@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {\\n    .about_container {\\n        flex-flow: column nowrap;\\n        justify-content: center;\\n        margin-bottom: 2rem;\\n    }\\n\\n    .about_title {\\n        width: 100%;\\n    }\\n\\n    .about_info {\\n        margin-bottom: 1rem;\\n    }\\n\\n    .about_photo {\\n        margin: 0;\\n        display: flex;\\n        justify-content: center;\\n        align-items: center;\\n    }\\n\\n    .about_photo_container {\\n        max-width: 100%;\\n        max-height: auto;\\n    }\\n}\", \"\"]);\n\n// exports\n\n\n//# sourceURL=webpack:///./src/views/About/About.module.css?./node_modules/cra-universal/node_modules/css-loader");
 
 /***/ }),
 
