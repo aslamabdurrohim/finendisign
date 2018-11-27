@@ -6,7 +6,7 @@ const Home = ({ type, classBtn, children }) => {
     let classes = "";
     switch (classBtn) {
         case ("submit"):
-            classes = styles.button_sumit;
+            classes = styles.button_submit;
             break;
         default:
             classes = styles.button_home;
