@@ -1,0 +1,23 @@
+.about_container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+}
+
+.about_title {
+    width: 50%;
+}
+
+.about_info {
+    width: 100%;
+}
+
+.about_photo {
+    margin-left: 2rem;
+    width: 100%;
+}
+
+.about_photo_container {
+    width: 480px;
+    height: 265px;
+}

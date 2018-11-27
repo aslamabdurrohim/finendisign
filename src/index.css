@@ -19,12 +19,6 @@ code {
     monospace;
 }
 
-@media(max-width: 410px) {
-  #root {
-    width: 100vw;
-  }
-}
-
 a, a:visited {
   color: #80fbff;
   border-bottom: 1px solid transparent;
@@ -35,4 +29,22 @@ a:hover {
   color: #fff;
   border-color: #fff;
   transition: border 0.2s ease-out;
+}
+
+h1, h2, h3 ,h4 {
+  font-weight: 600;
+  letter-spacing: 3.5px;
+  line-height: 1.2em;
+  margin-top: 0;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 13px;
+}
+
+@media(max-width: 410px) {
+  #root {
+    width: 100vw;
+  }
 }
