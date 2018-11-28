@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Placeholder from "../../assets/images/placeholder.png";
 import styles from "./ImageLoader.module.css";
 
 class ImageLoader extends Component {
@@ -21,7 +22,6 @@ class ImageLoader extends Component {
     }
 
     render() {
-        const { srcPreLoaded } = this.props;
         return (
             <div className={styles.image_container}>
                 <div
@@ -30,7 +30,7 @@ class ImageLoader extends Component {
                 />
                 <div
                     className={styles.image_preloaded}
-                    style={{ backgroundImage: `url('${srcPreLoaded}')` }}
+                    style={{ backgroundImage: `url('${Placeholder}')` }}
                 />
             </div>
         );

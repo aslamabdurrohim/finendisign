@@ -9,6 +9,7 @@ import styles from "./Settings.module.css";
 import ImageLoader from "../../components/ImageLoader";
 import Layout from "../../components/Layout";
 import Button from "../../components/Common/Button";
+import Alert from "../../components/Alert";
 
 class Settings extends Component {
     state = {
@@ -19,50 +20,52 @@ class Settings extends Component {
 
     }
 
+    handleChangeBackground = id => {
+        this.setState({
+            homeBackground: id
+        });
+
+        Alert("success", "Background has been changed!");
+    }
+
     renderColumns = () => (
         [
             {
-                Header: "Preview",
-                accessor: "imageURL",
+                Header: "Gallery Configurations",
                 columns: [
                     {
+                        Header: "Preview",
+                        id: "preview",
                         Cell: row => (
                             <div className={styles.settings_img_preview}>
-                                <ImageLoader srcPreloaded={row.original.imageURL} srcLoaded={row.original.imageURL} />
+                                <ImageLoader srcLoaded={row.original.imageURL} />
                             </div>
                         ),
                         width: 100
-                    }
-                ]
-            },
-            {
-                Header: "Name",
-                accessor: "name",
-                columns: [{
-                    Cell: row => (
-                        <div className={styles.settings_columns}>
-                            {row.original.name}
-                        </div>
-                    ),
-                    style: { "white-space": "unset", "line-height": "1.5" }
-                }]
-            },
-            {
-                Header: "Category",
-                accessor: "category",
-                columns: [{
-                    Cell: row => (
-                        <div className={styles.settings_columns}>
-                            {row.original.category}
-                        </div>
-                    ),
-                    width: 120
-                }]
-            },
-            {
-                Header: "",
-                columns: [
+                    },
                     {
+                        Header: "Name",
+                        id: "name",
+                        Cell: row => (
+                            <div className={styles.settings_columns}>
+                                {row.original.name}
+                            </div>
+                        ),
+                        style: { "white-space": "unset", "line-height": "1.5" }
+                    },
+                    {
+                        Header: "Category",
+                        id: "category",
+                        Cell: row => (
+                            <div className={styles.settings_columns}>
+                                {row.original.category}
+                            </div>
+                        ),
+                        width: 120
+                    },
+                    {
+                        Header: "",
+                        id: "action",
                         Cell: row => {
                             const { homeBackground } = this.state;
                             return (
@@ -71,7 +74,7 @@ class Settings extends Component {
                                         <div>
                                             <FontAwesomeIcon icon="edit" size="1x" />
                                         </div>
-                                        <div>
+                                        <div onClick={e => this.handleChangeBackground(row.original.id)} role="presentation">
                                             <FontAwesomeIcon
                                                 icon="images"
                                                 size="1x"
@@ -106,10 +109,12 @@ class Settings extends Component {
                 <div className={styles.settings_design_list}>
                     <ReactTable
                         data={data}
+                        noDataText="No data found"
                         columns={this.renderColumns()}
-                        defaultPageSize={5}
+                        defaultPageSize={10}
                         className="-highlight"
                         resizable={false}
+                        sortable={false}
                     />
                 </div>
             </Layout>

@@ -4,6 +4,7 @@
     align-items: center;
     width: 100%;
     margin-bottom: 1rem;
+    font: inherit;
 }
 
 .settings_new_design_btn_contaiener svg {
@@ -16,11 +17,6 @@
     font-size: 15px;
 }
 
-.settings_img_preview {
-    width: 100%;
-    height: 50px;
-}
-
 .settings_columns {
     display: flex;
     align-items: center;
@@ -28,6 +24,11 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: unset;
+}
+
+.settings_img_preview {
+    width: 100%;
+    height: 50px;
 }
 
 .settings_action_column {
