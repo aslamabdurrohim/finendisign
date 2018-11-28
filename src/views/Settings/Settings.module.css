@@ -1,0 +1,40 @@
+.settings_new_design_btn_contaiener {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.settings_new_design_btn_contaiener svg {
+    margin-left: 6px;
+}
+
+.settings_design_list {
+    background: #fff;
+    color: #333;
+    font-size: 15px;
+}
+
+.settings_img_preview {
+    width: 100%;
+    height: 50px;
+}
+
+.settings_columns {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: unset;
+}
+
+.settings_action_column {
+    display: flex;
+}
+
+.settings_action_column > div {
+    margin-right: 1rem;
+    cursor: pointer;
+}
