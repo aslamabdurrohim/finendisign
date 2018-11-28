@@ -40,7 +40,7 @@ class Navbar extends Component {
                     <div className={styles.navbar_mobile_brand_container}>
                         <div className={styles.navbar_mobile_brand}>
                             <NavLink to="/">
-                                <ImageLoader srcLoaded={Logo} srcPreloaded={Logo} />
+                                <ImageLoader srcLoaded={Logo} />
                             </NavLink>
                         </div>
                     </div>

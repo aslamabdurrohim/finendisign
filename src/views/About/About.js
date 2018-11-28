@@ -22,7 +22,7 @@ const About = () => (
             </div>
             <div className={styles.about_photo}>
                 <div className={styles.about_photo_container}>
-                    <ImageLoader srcPreloaded={Image} srcLoaded={Image} />
+                    <ImageLoader srcLoaded={Image} />
                 </div>
             </div>
         </div>

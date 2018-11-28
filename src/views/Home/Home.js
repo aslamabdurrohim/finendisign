@@ -10,7 +10,7 @@ const Home = () => (
     <Fragment>
         <div className={styles.home_container}>
             <div className={styles.home_background_container}>
-                <ImageLoader srcLoaded={Background} srcPreload={Background} />
+                <ImageLoader srcLoaded={Background} />
                 <div className={styles.home_background_backdrop} />
             </div>
             <div className={styles.home_title_wrapper}>

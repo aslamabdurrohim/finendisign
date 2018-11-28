@@ -20,6 +20,9 @@ const NavbarItem = () => (
         <li className={styles.navbaritem}>
             <NavLink exact activeClassName={styles.navitem_active} to="/contact">CONTACT</NavLink>
         </li>
+        <li className={styles.navbaritem}>
+            <NavLink exact activeClassName={styles.navitem_active} to="/settings">SETTINGS</NavLink>
+        </li>
     </Fragment>
 );
 
