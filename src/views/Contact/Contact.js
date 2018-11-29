@@ -1,6 +1,7 @@
 /* eslint react/jsx-one-expression-per-line: 0*/
 
 import React, { Component } from "react";
+import { formValidation, submitValidation, errorClass } from "../../utils/form-validation";
 import Layout from "../../components/Layout";
 import styles from "./Contact.module.css";
 import Form from "../../components/Common/Form";
@@ -15,6 +16,20 @@ class Contact extends Component {
             email: "",
             subject: "",
             message: ""
+        },
+        formErrors: {
+            fname: "",
+            lname: "",
+            email: "",
+            subject: "",
+            message: ""
+        },
+        formValidity: {
+            fname: false,
+            lname: false,
+            email: false,
+            subject: false,
+            message: false
         },
         isSubmitting: false
     };
@@ -31,17 +46,23 @@ class Contact extends Component {
     handleChange = e => {
         e.preventDefault();
         const { value, name } = e.target;
-
+        const { formErrors, formValidity, form } = this.state;
+        const { validationError, validity } = formValidation(name, value, formValidity, formErrors);
         this.setState(prevState => ({
             form: {
                 ...prevState.form,
                 [name]: value
-            }
-        }));
+            },
+            formErrors: validationError,
+            formValidity: validity
+        }), () => {
+            this.setState({ canSubmit: submitValidation(form, formValidity) });
+        });
     }
 
     render() {
-        const { form, isSubmitting } = this.state;
+        const { form, formErrors, isSubmitting, canSubmit } = this.state;
+        const { fname, lname, subject, email, message } = formErrors;
         return (
             <Layout>
                 <div className={styles.contact_container}>
@@ -69,8 +90,10 @@ class Contact extends Component {
                                             id="fname"
                                             value={form.fname}
                                             onChange={this.handleChange}
+                                            className={errorClass(fname)}
+                                            errorMsg={fname}
+                                            placeholder="First Name"
                                         />
-                                        First Name
                                     </label>
                                 </div>
                                 <div className={styles.contact_form_lname}>
@@ -81,8 +104,10 @@ class Contact extends Component {
                                             id="lname"
                                             value={form.lname}
                                             onChange={this.handleChange}
+                                            className={errorClass(lname)}
+                                            errorMsg={lname}
+                                            placeholder="Last Name"
                                         />
-                                        Last Name
                                     </label>
                                 </div>
                             </div>
@@ -93,6 +118,9 @@ class Contact extends Component {
                                 id="email"
                                 value={form.email}
                                 onChange={this.handleChange}
+                                className={errorClass(email)}
+                                errorMsg={email}
+                                placeholder="yours@email.com"
                             />
                             <p>Subject *</p>
                             <Input
@@ -101,6 +129,9 @@ class Contact extends Component {
                                 id="subject"
                                 value={form.subject}
                                 onChange={this.handleChange}
+                                className={errorClass(subject)}
+                                errorMsg={subject}
+                                placeholder="Subject"
                             />
                             <p>Message *</p>
                             <Input
@@ -109,8 +140,16 @@ class Contact extends Component {
                                 id="message"
                                 value={form.message}
                                 onChange={this.handleChange}
+                                className={errorClass(message)}
+                                errorMsg={message}
                             />
-                            <Button type="submit" classBtn="submit">{isSubmitting ? "SUBMITTING..." : "SUBMIT"}</Button>
+                            <Button
+                                type="submit"
+                                classBtn="submit"
+                                disabled={!canSubmit}
+                            >
+                                {isSubmitting ? "SUBMITTING..." : "SUBMIT"}
+                            </Button>
                         </Form>
                     </div>
                 </div>

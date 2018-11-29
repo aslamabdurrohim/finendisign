@@ -1,29 +1,20 @@
-import React, { Fragment } from "react";
+import React from "react";
 import { NavLink } from "react-router-dom";
 import styles from "./NavbarItem.module.css";
-import Logo from "../../../../assets/images/logo.png";
+import { routes } from "../../../utils/routes";
 
 const NavbarItem = () => (
-    <Fragment>
-        <li className={styles.navbaritem}>
-            <NavLink to="/" className={styles.navbaritem_brand_wrapper}>
-                <img
-                    src={Logo}
-                    alt="Finendisgn Logo"
-                    className={styles.navbaritem_brand_logo}
-                />
+    routes.map((route, i) => (
+        <li className={styles.navbaritem} key={i}>
+            <NavLink
+                exact
+                activeClassName={styles.navitem_active}
+                to={route.to}
+            >
+                {route.name}
             </NavLink>
         </li>
-        <li className={styles.navbaritem}>
-            <NavLink exact activeClassName={styles.navitem_active} to="/about">ABOUT</NavLink>
-        </li>
-        <li className={styles.navbaritem}>
-            <NavLink exact activeClassName={styles.navitem_active} to="/contact">CONTACT</NavLink>
-        </li>
-        <li className={styles.navbaritem}>
-            <NavLink exact activeClassName={styles.navitem_active} to="/settings">SETTINGS</NavLink>
-        </li>
-    </Fragment>
+    ))
 );
 
 export default NavbarItem;
