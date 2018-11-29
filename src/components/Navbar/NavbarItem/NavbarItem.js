@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import { NavLink } from "react-router-dom";
 import styles from "./NavbarItem.module.css";
-import Logo from "../../../../assets/images/logo.png";
+import Logo from "../../../assets/images/logo.png";
 
 const NavbarItem = () => (
     <Fragment>
