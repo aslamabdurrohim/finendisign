@@ -11,7 +11,7 @@ const Footer = () => (
                     <FontAwesomeIcon icon="envelope" color="#fff" size="xs" />
                 </a>
             </div>
-            <div className>
+            <div>
                 <a href="https://www.facebook.com/finendi.wardhana" target="_top">
                     <FontAwesomeIcon icon={["fab", "facebook-f"]} color="#fff" size="xs" />
                 </a>

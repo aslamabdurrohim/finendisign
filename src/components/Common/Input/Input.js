@@ -2,51 +2,49 @@ import React from "react";
 import PropTypes from "prop-types";
 import styles from "./Input.module.css";
 
-const Input = ({ type, name, value, onChange, id }) => {
-    let element = null;
-    switch (type) {
-        case ("text"):
-            element = (
-                <input
-                    type="text"
-                    value={value}
-                    id={id}
-                    name={name}
-                    onChange={onChange}
-                    className={styles.input}
-                />
-            );
-            break;
-        case ("textarea"):
-            element = (
+const Input = ({
+    type,
+    name,
+    value,
+    onChange,
+    id,
+    className,
+    errorMsg,
+    placeholder
+}) => {
+    if (type === "textarea") {
+        return (
+            <div className={styles.input_container}>
                 <textarea
                     value={value}
                     id={id}
                     name={name}
                     onChange={onChange}
-                    className={styles.input}
+                    className={[styles.input, styles[className]].join(" ")}
                     rows={10}
                     style={{ height: "100px", resize: "vertical" }}
                 />
-            );
-            break;
-        case ("email"):
-            element = (
-                <input
-                    type="email"
-                    value={value}
-                    name={name}
-                    onChange={onChange}
-                    className={styles.input}
-                />
-            );
-            break;
-        default:
-            element = null;
-            break;
+                <div className={styles.input_err_msg_wrapper}>
+                    {errorMsg && <p className={styles.input_error_msg}>{errorMsg}</p>}
+                </div>
+            </div>
+        );
     }
-
-    return element;
+    return (
+        <div className={styles.input_container}>
+            <input
+                type={type}
+                value={value}
+                name={name}
+                onChange={onChange}
+                className={[styles.input, styles[className]].join(" ")}
+                placeholder={placeholder}
+            />
+            <div className={styles.input_err_msg_wrapper}>
+                {errorMsg && <p className={styles.input_error_msg}>{errorMsg}</p>}
+            </div>
+        </div>
+    );
 };
 
 Input.propTypes = {
@@ -54,7 +52,16 @@ Input.propTypes = {
     name: PropTypes.string.isRequired,
     value: PropTypes.string.isRequired,
     onChange: PropTypes.func.isRequired,
-    id: PropTypes.string.isRequired
+    id: PropTypes.string.isRequired,
+    className: PropTypes.string,
+    placeholder: PropTypes.string,
+    errorMsg: PropTypes.string
+};
+
+Input.defaultProps = {
+    className: "",
+    errorMsg: "",
+    placeholder: ""
 };
 
 export default Input;

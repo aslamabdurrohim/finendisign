@@ -25,7 +25,7 @@ class Layout extends Component {
                     <Navbar />
                     <section className={styles.layout_main_container}>
                         <div className={styles.layout_main_wrapper}>
-                            <Alert stack={3} timeout={3000} />
+                            <Alert stack timeout={3000} />
                             {children}
                         </div>
                     </section>

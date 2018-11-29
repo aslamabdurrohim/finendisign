@@ -21,25 +21,6 @@ a.navitem_active {
     height: 18px;
 }
 
-.navbaritem_brand_wrapper {
-    width: 100px;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-a.navbaritem_brand_wrapper:hover,
-a.navbaritem_brand_wrapper:visited {
-    border-bottom-color: transparent;
-    height: 100px;
-}
-
-.navbaritem_brand_logo {
-    width: 100%;
-    height: auto;
-}
-
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
     .navbaritem {
         font-size: 15px;

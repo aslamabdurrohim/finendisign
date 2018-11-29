@@ -6,11 +6,8 @@ import ImageLoader from "../ImageLoader";
 import Logo from "../../assets/images/logo.png";
 
 class Navbar extends Component {
-    constructor() {
-        super();
-        this.state = {
-            isNavMobileClicked: false
-        };
+    state = {
+        isNavMobileClicked: false
     }
 
     handleNavMobileClicked = () => {
@@ -46,6 +43,11 @@ class Navbar extends Component {
                     </div>
                 </div>
                 <ul className={styles.navbar_list}>
+                    <li className={styles.navbaritem}>
+                        <NavLink to="/" className={styles.navbar_brand_wrapper}>
+                            <ImageLoader srcLoaded={Logo} />
+                        </NavLink>
+                    </li>
                     <NavbarItem />
                 </ul>
             </nav>
