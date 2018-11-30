@@ -23,6 +23,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-self: center;
+    -webkit-animation: fadein 1s; /* Chr, Saf */
+    animation: fadein 1s;
 }
 
 .title-container {
@@ -110,4 +112,9 @@ body {
     .subtitle {
         font-size: 0.8rem;
     }
+}
+
+@keyframes fadein {
+    from { opacity: 0;}
+    to { opacity: 1;}
 }
