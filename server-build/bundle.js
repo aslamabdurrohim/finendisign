@@ -22,7 +22,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "d06f8f2b278278fdad92";
+/******/ 	var hotCurrentHash = "dd7912183e139123d596";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -1528,7 +1528,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Set
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("__webpack_require__(/*! ./server/index.js */\"./server/index.js\");\nmodule.exports = __webpack_require__(/*! !!/Users/nakama/Documents/Github/finendisign/node_modules/start-server-webpack-plugin/dist/monitor-loader.js!/Users/nakama/Documents/Github/finendisign/node_modules/start-server-webpack-plugin/dist/monitor-loader.js */\"./node_modules/start-server-webpack-plugin/dist/monitor-loader.js!./node_modules/start-server-webpack-plugin/dist/monitor-loader.js\");\n\n\n//# sourceURL=webpack:///./node_modules/start-server-webpack-plugin/dist/monitor-loader.js?multi_./server/index.js_!./node_modules/start-server-webpack-plugin/dist/monitor-loader.js");
+eval("__webpack_require__(/*! ./server/index.js */\"./server/index.js\");\nmodule.exports = __webpack_require__(/*! !!/Users/nakama/Documents/Projects/finendisign/node_modules/start-server-webpack-plugin/dist/monitor-loader.js!/Users/nakama/Documents/Projects/finendisign/node_modules/start-server-webpack-plugin/dist/monitor-loader.js */\"./node_modules/start-server-webpack-plugin/dist/monitor-loader.js!./node_modules/start-server-webpack-plugin/dist/monitor-loader.js\");\n\n\n//# sourceURL=webpack:///./node_modules/start-server-webpack-plugin/dist/monitor-loader.js?multi_./server/index.js_!./node_modules/start-server-webpack-plugin/dist/monitor-loader.js");
 
 /***/ }),
 
