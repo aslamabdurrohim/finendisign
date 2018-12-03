@@ -36,7 +36,7 @@ Button.propTypes = {
 Button.defaultProps = {
     type: "",
     onClick: null,
-    disabled: true
+    disabled: false
 };
 
 export default Button;

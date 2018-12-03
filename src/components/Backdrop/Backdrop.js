@@ -1,11 +1,20 @@
 import React from "react";
+import PropTypes from "prop-types";
 import styles from "./Backdrop.module.css";
 
-const Backdrop = open => {
-    const backdropClass = open ? [styles.backdrop, styles.backdrop_show] : [styles.backdrop, styles.backdrop_close];
+const Backdrop = ({ show }) => {
+    const backdropClass = show ? [styles.backdrop, styles.backdrop_show] : [styles.backdrop, styles.backdrop_close];
+    if (!show) {
+        return null;
+    }
+
     return (
         <div className={backdropClass.join(" ")} />
     );
+};
+
+Backdrop.propTypes = {
+    open: PropTypes.bool.isRequired
 };
 
 export default Backdrop;
