@@ -1,3 +1,7 @@
+.input_container {
+    margin-bottom: 1.5rem;
+}
+
 .input {
     border-radius: 0;
     height: 42px;
@@ -10,4 +14,19 @@
 
 .input:focus {
     outline: none;
+}
+
+.input_err_msg_wrapper {
+    width: 100%;
+    height: 14px
+}
+
+p.input_error_msg {
+    font-size: 10px;
+    color: #dc3545;
+    margin-bottom: 0;
+}
+
+.is_invalid {
+    border: 1px solid #dc3545;
 }

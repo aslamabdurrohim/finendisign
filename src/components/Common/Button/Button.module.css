@@ -6,6 +6,10 @@ button {
     color: #fff;
 }
 
+button:disabled {
+    cursor: not-allowed;
+}
+
 .button_default {
     background: transparent;
     border: 2px solid #fff;

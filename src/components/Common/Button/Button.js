@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import styles from "./Button.module.css";
 
-const Home = ({ type, classBtn, children, onClick }) => {
+const Button = ({ type, classBtn, children, onClick, disabled }) => {
     let classes = "";
     switch (classBtn) {
         case ("submit"):
@@ -20,19 +20,23 @@ const Home = ({ type, classBtn, children, onClick }) => {
             type={type}
             className={classes}
             onClick={onClick}
+            disabled={disabled}
         >
             {children}
         </button>
     );
 };
 
-Home.propTypes = {
-    type: PropTypes.string.isRequired,
-    onClick: PropTypes.func
+Button.propTypes = {
+    type: PropTypes.string,
+    onClick: PropTypes.func,
+    disabled: PropTypes.bool
 };
 
-Home.defaultProps = {
-    onClick: null
+Button.defaultProps = {
+    type: "",
+    onClick: null,
+    disabled: true
 };
 
-export default Home;
+export default Button;
