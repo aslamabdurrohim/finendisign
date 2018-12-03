@@ -28,14 +28,15 @@ const Button = ({ type, classBtn, children, onClick, disabled }) => {
 };
 
 Button.propTypes = {
-    type: PropTypes.string.isRequired,
+    type: PropTypes.string,
     onClick: PropTypes.func,
-    canSubmit: PropTypes.bool
+    disabled: PropTypes.bool
 };
 
 Button.defaultProps = {
+    type: "",
     onClick: null,
-    canSubmit: true
+    disabled: true
 };
 
 export default Button;
