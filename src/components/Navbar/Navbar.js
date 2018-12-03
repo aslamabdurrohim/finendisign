@@ -2,8 +2,8 @@ import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
 import styles from "./Navbar.module.css";
 import NavbarItem from "./NavbarItem";
-import ImageLoader from "../../ImageLoader";
-import Logo from "../../../assets/images/logo.png";
+import ImageLoader from "../ImageLoader";
+import Logo from "../../assets/images/logo.png";
 
 class Navbar extends Component {
     constructor() {

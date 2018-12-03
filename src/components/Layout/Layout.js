@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from "react";
 import Alert from "react-s-alert";
-import Navbar from "../Common/Navbar";
-import Footer from "../Common/Footer";
+import Navbar from "../Navbar";
+import Footer from "../Footer";
 import styles from "./Layout.module.css";
 
 class Layout extends Component {
