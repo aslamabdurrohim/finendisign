@@ -12,7 +12,7 @@ const About = () => (
         <div className={styles.about_container}>
             <div className={styles.about_info}>
                 <p>Finendi Wardhana is a freelance illustrator and graphic designer from Bekasi, Indonesia.</p>
-                <p>Finendi specialize mainly in football portraits and logo designs. Clients include Samabas Wirasena Sinergi, Golden Guest, Nasatur, among others.</p>
+                <p>Finendi specialize mainly in Illustrations portraits and logo designs. Clients include Samabas Wirasena Sinergi, Golden Guest, Nasatur, among others.</p>
                 <p>
                     For business enquires or info: <a href="mailto:finendi11@gmail.com">finendi11@gmail.com</a>
                 </p>
