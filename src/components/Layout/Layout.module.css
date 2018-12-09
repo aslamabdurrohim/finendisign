@@ -16,6 +16,14 @@ div.layout_container_loaded {
     margin: 0 120px;
 }
 
+.layout_main_wrapper.layout_main_wrapper_nomargin {
+    margin: 0;
+}
+
+.layout_title {
+    margin-bottom: 1rem;
+}
+
 @keyframes fadein {
     from { opacity: 0;}
     to { opacity: 1;}

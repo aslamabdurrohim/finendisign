@@ -45,3 +45,35 @@
     justify-content: center;
     flex-direction: column;
 }
+
+.settings_imageurl_wrapper {
+    display: flex;
+    justify-content: space-between;
+} 
+
+.settings_add_imageurl_icon {
+    width: 42px;
+    height: 42px;
+    border: 2px solid #000000;
+    background: #fff;
+    color: #000;
+    margin-left: 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background .15s linear;
+}
+
+.settings_add_imageurl_icon:hover {
+    background: #000;
+    color: #fff;
+}
+
+.setting_add_imageurl_space {
+    width: 42px;
+    height: 42px;
+    background: transparent;
+    margin-left: 1rem;
+}
+

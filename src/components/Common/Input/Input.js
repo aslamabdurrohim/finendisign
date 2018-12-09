@@ -41,7 +41,7 @@ const Input = ({
                 placeholder={placeholder}
             />
             <div className={styles.input_err_msg_wrapper}>
-                {errorMsg && <p className={styles.input_error_msg}>{errorMsg}</p>}
+                { (errorMsg && name !== "imageURL") && <p className={styles.input_error_msg}>{errorMsg}</p> }
             </div>
         </div>
     );

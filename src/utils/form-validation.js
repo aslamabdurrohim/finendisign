@@ -3,7 +3,7 @@ const isEmail = email => {
     return emailRgx.test(email.toLowerCase());
 };
 
-export const formValidation = (name, value, validity, validationError) => {
+export const formValidation = (name, value, validity, validationError, index = 0) => {
     validity[name] = value.length > 0;
     validationError[name] = validity[name] ? "" : "This field is required and cannot be empty";
 

@@ -64,10 +64,9 @@ class Contact extends Component {
         const { form, formErrors, isSubmitting, canSubmit } = this.state;
         const { fname, lname, subject, email, message } = formErrors;
         return (
-            <Layout>
+            <Layout title="CONTACT ME">
                 <div className={styles.contact_container}>
                     <div className={styles.contact_info}>
-                        <h2 className={styles.contact_title}>CONTACT ME</h2>
                         <p>
                             Email:&nbsp;
                             <a href="mailto:finendi11@gmail.com" target="_top">

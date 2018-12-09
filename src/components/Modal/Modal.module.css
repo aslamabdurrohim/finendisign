@@ -22,7 +22,7 @@
     margin-bottom: 24px;
 }
 
-.modal_header h1 {
+.modal_header h2 {
     margin: 0;
 }
 
@@ -39,9 +39,24 @@
     width: 100%;
 }
 
+.modal_main {
+    max-height: 400px;
+    overflow-y: scroll;
+}
+
 .modal_show {
     display: block !important;
     opacity: 1 !important;
     z-index: 200;
     transform: translateY(0) !important;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .modal_header h1 {
+        font-size: 1.4rem;
+    }
+
+    .modal p {
+        font-size: 0.8rem;
+    }
 }

@@ -11,7 +11,7 @@ const Modal = ({ show, onClose, children, title }) => {
             <Backdrop show={show} />
             <div className={modalClass.join(" ")}>
                 <div className={styles.modal_header}>
-                    <h1>{title}</h1>
+                    <h2>{title}</h2>
                     <div className={styles.modal_close_icon} onClick={onClose} role="presentation">
                         <FontAwesomeIcon icon="times" size="2x" />
                     </div>
