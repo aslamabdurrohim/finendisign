@@ -2,19 +2,18 @@
 
 import React, { Component, Fragment } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import ReactTable from "react-table";
 import "react-table/react-table.css";
 import { data } from "../../utils/mock";
 import { formValidation, submitValidation, errorClass } from "../../utils/form-validation";
 import styles from "./Settings.module.css";
 
-import ImageLoader from "../../components/ImageLoader";
 import Modal from "../../components/Modal";
 import Layout from "../../components/Layout";
 import Button from "../../components/Common/Button";
 import Alert from "../../components/Alert";
 import Form from "../../components/Common/Form";
 import Input from "../../components/Common/Input";
+import Table from "../../components/Common/Table";
 import Select from "../../components/Common/Select";
 
 class Settings extends Component {
@@ -145,71 +144,8 @@ class Settings extends Component {
         );
     }
 
-    renderColumns = () => (
-        [
-            {
-                Header: "Gallery Configurations",
-                columns: [
-                    {
-                        Header: "Preview",
-                        id: "preview",
-                        Cell: row => (
-                            <div className={styles.settings_img_preview}>
-                                <ImageLoader srcLoaded={row.original.imageURL} />
-                            </div>
-                        ),
-                        width: 100
-                    },
-                    {
-                        Header: "Name",
-                        id: "name",
-                        Cell: row => (
-                            <div className={styles.settings_columns}>
-                                {row.original.name}
-                            </div>
-                        ),
-                        style: { "white-space": "unset", "line-height": "1.5" }
-                    },
-                    {
-                        Header: "Category",
-                        id: "category",
-                        Cell: row => (
-                            <div className={styles.settings_columns}>
-                                {row.original.category}
-                            </div>
-                        ),
-                        width: 120
-                    },
-                    {
-                        Header: "",
-                        id: "action",
-                        Cell: row => {
-                            const { homeBackground } = this.state;
-                            return (
-                                <div className={styles.settings_columns}>
-                                    <div className={styles.settings_action_column}>
-                                        <div onClick={this.handleEditDesignClick} role="presentation">
-                                            <FontAwesomeIcon icon="edit" size="1x" />
-                                        </div>
-                                        <div onClick={e => this.handleChangeBackground(row.original.id)} role="presentation">
-                                            <FontAwesomeIcon
-                                                icon="images"
-                                                size="1x"
-                                                style={{ color: row.original.id === homeBackground ? "#4caf50" : "#333" }}
-                                            />
-                                        </div>
-                                    </div>
-                                </div>
-                            );
-                        },
-                        width: 70
-                    }
-                ]
-            }
-        ]
-    )
-
     render() {
+        const { homeBackground } = this.state;
         return (
             <Fragment>
                 {this.renderModal()}
@@ -226,14 +162,12 @@ class Settings extends Component {
                         </Button>
                     </div>
                     <div className={styles.settings_design_list}>
-                        <ReactTable
+                        <Table
                             data={data}
-                            noDataText="No data found"
-                            columns={this.renderColumns()}
-                            defaultPageSize={10}
-                            className="-highlight"
-                            resizable={false}
-                            sortable={false}
+                            onChangeBackground={this.handleChangeBackground}
+                            onEditDesignClick={this.handleEditDesignClick}
+                            idBackground={homeBackground}
+                            type="settings"
                         />
                     </div>
                 </Layout>
