@@ -14,7 +14,7 @@ const Backdrop = ({ show }) => {
 };
 
 Backdrop.propTypes = {
-    open: PropTypes.bool.isRequired
+    show: PropTypes.bool.isRequired
 };
 
 export default Backdrop;

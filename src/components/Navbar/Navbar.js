@@ -31,7 +31,7 @@ class Navbar extends Component {
                         <div className={styles.navbar_mobile_bar} />
                         <div className={styles.navbar_mobile_bar} />
                     </div>
-                    <div className={styles.navbar_mobile_list} style={{ maxHeight: isNavMobileClicked ? "0" : "20rem" }}>
+                    <div className={styles.navbar_mobile_list} style={{ maxHeight: isNavMobileClicked ? "0" : "30rem" }}>
                         <NavbarItem />
                     </div>
                     <div className={styles.navbar_mobile_brand_container}>

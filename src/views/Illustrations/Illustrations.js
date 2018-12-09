@@ -10,7 +10,7 @@ class Illustrations extends Component {
     render() {
         const { title } = this.state;
         return (
-            <Layout title={title}>
+            <Layout title={title} nomargin>
                 <div />
             </Layout>
         );

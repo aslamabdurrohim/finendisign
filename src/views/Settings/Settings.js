@@ -30,7 +30,7 @@ class Settings extends Component {
         formErrors: {
             title: "",
             category: "",
-            imageURL: []
+            imageURL: [""]
         },
         formValidity: {
             title: false,
@@ -49,14 +49,22 @@ class Settings extends Component {
                     type="text"
                     name="imageURL"
                     id="imageURL"
-                    value={imageURL[index]}
+                    value={imageURL[index] || ""}
                     onChange={e => this.handleInputChange(e, index)}
-                    className={errorClass(formErrors.imageURL)}
-                    errorMsg={formErrors.imageURL}
+                    className={errorClass(formErrors.imageURL[index])}
+                    errorMsg={formErrors.imageURL[index]}
                     placeholder="Your design image url"
                 />
 
-                {index > 0 && <div className={styles.setting_add_imageurl_space} />}
+                {index > 0 && (
+                    <div
+                        className={styles.settings_remove_imageurl_icon}
+                        onClick={e => this.handleRemoveImageUrlClick(index)}
+                        role="presentation"
+                    >
+                        <FontAwesomeIcon icon="times" size="1x" />
+                    </div>
+                )}
 
                 {index === 0 && (
                     <div
@@ -85,7 +93,40 @@ class Settings extends Component {
         });
     }
 
-    handleAddImageUrlInput = () => this.setState(prevState => ({ imageURLInputs: [...prevState.imageURLInputs, ""] }));
+    handleAddImageUrlInput = () => {
+        this.setState(prevState => ({
+            formValidity: {
+                imageURL: [...prevState.formValidity.imageURL, false]
+            },
+            imageURLInputs: [...prevState.imageURLInputs, ""]
+        }), () => this.handleSubmitValidation());
+    }
+
+    handleRemoveImageUrlClick = index => {
+        const { imageURLInputs, form, formValidity, formErrors } = this.state;
+
+        const values = [...imageURLInputs];
+        const inputValues = [...form.imageURL];
+        const inputValidity = [...formValidity.imageURL];
+        const inputErros = [...formErrors.imageURL];
+
+        values.splice(index, 1);
+        inputValues.splice(index, 1);
+        inputValidity.splice(index, 1);
+        inputErros.splice(index, 1);
+        this.setState({
+            imageURLInputs: values,
+            form: {
+                imageURL: inputValues
+            },
+            formValidity: {
+                imageURL: inputValidity
+            },
+            formErrors: {
+                imageURL: inputErros
+            }
+        }, () => this.handleSubmitValidation());
+    }
 
     handleChangeBackground = id => {
         this.setState({
@@ -101,24 +142,31 @@ class Settings extends Component {
         e.preventDefault();
     }
 
+    handleSubmitValidation = () => {
+        const { formValidity, form } = this.state;
+        this.setState({ canSubmit: submitValidation(form, formValidity) });
+    }
+
     handleInputChange = (e, index = 0) => {
         e.preventDefault();
         const { value, name } = e.target;
         const { formErrors, formValidity, form } = this.state;
         const { validationError, validity } = formValidation(name, value, formValidity, formErrors, index);
+        const imgUrlValues = [...form.imageURL];
 
-        const imageURLVal = [];
-        imageURLVal[index] = value;
+        if (name === "imageURL") {
+            imgUrlValues[index] = value;
+        }
 
         this.setState(prevState => ({
             form: {
                 ...prevState.form,
-                [name]: name === "imageURL" ? imageURLVal : value
+                [name]: name === "imageURL" ? imgUrlValues : value
             },
             formErrors: validationError,
             formValidity: validity
         }), () => {
-            this.setState({ canSubmit: submitValidation(form, formValidity) });
+            this.handleSubmitValidation();
         });
     }
 
@@ -147,7 +195,7 @@ class Settings extends Component {
                         type="text"
                         name="title"
                         id="title"
-                        value={title}
+                        value={title || ""}
                         onChange={this.handleInputChange}
                         className={errorClass(formErrors.title)}
                         errorMsg={formErrors.title}
@@ -156,7 +204,7 @@ class Settings extends Component {
                     <p>Category *</p>
                     <Select
                         options={categories}
-                        value={category}
+                        value={category || ""}
                         name="category"
                         onChange={this.handleInputChange}
                     />

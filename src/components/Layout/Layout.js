@@ -7,8 +7,13 @@ import styles from "./Layout.module.css";
 
 class Layout extends Component {
     static propTypes = {
-        title: PropTypes.string.isRequired
+        title: PropTypes.string.isRequired,
+        nomargin: PropTypes.bool
     };
+
+    static defaultProps = {
+        nomargin: false
+    }
 
     state = {
         classes: [styles.layout_container]
@@ -23,10 +28,10 @@ class Layout extends Component {
 
     render() {
         const { classes } = this.state;
-        const { children, title } = this.props;
+        const { children, title, nomargin } = this.props;
 
         let wrapperClass = null;
-        if (title === "Illustrations" || title === "logos") {
+        if (nomargin) {
             wrapperClass = [styles.layout_main_wrapper, styles.layout_main_wrapper_nomargin];
         } else {
             wrapperClass = [styles.layout_main_wrapper];
