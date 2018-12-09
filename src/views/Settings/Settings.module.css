@@ -16,3 +16,35 @@
     color: #333;
     font-size: 15px;
 }
+
+.settings_imageurl_wrapper {
+    display: flex;
+}
+
+.settings_remove_imageurl_icon,
+.settings_add_imageurl_icon {
+    width: 42px;
+    height: 42px;
+    margin-left: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #000;
+    transition: background .15s linear;
+    cursor: pointer;
+}
+
+.settings_add_imageurl_icon,
+.settings_remove_imageurl_icon {
+    background: #fff;
+}
+
+.settings_add_imageurl_icon:hover {
+    color: #fff;
+    background: #000;
+}
+
+.settings_remove_imageurl_icon:hover {
+    color: #fff;
+    background: #ff0000;
+}

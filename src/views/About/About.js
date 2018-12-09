@@ -7,8 +7,7 @@ import ImageLoader from "../../components/ImageLoader";
 import Image from "../../assets/images/about-photo.jpg";
 
 const About = () => (
-    <Layout>
-        <h2 className={styles.about_title}>Finendi Wardhana</h2>
+    <Layout title="Finendi Wardhana">
         <div className={styles.about_container}>
             <div className={styles.about_info}>
                 <p>Finendi Wardhana is a freelance illustrator and graphic designer from Bekasi, Indonesia.</p>

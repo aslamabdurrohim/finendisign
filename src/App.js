@@ -5,6 +5,7 @@ import { faEnvelope, faPlus, faEdit, faImages, faTimes } from "@fortawesome/free
 import { faInstagram, faFacebook, faTwitter } from "@fortawesome/fontawesome-free-brands";
 
 import Home from "./views/Home";
+import Illustrations from "./views/Illustrations";
 import Contact from "./views/Contact";
 import About from "./views/About";
 import Settings from "./views/Settings";
@@ -23,6 +24,7 @@ library.add(
 const App = () => (
     <Switch>
         <Route exact path="/" component={Home} />
+        <Route exact path="/illustrations" component={Illustrations} />
         <Route path="/about" component={About} />
         <Route path="/contact" component={Contact} />
         <Route paht="/settings" component={Settings} />

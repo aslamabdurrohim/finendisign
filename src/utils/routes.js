@@ -1,5 +1,9 @@
 export const routes = [
     {
+        name: "ILLUSTRATIONS",
+        to: "/illustrations"
+    },
+    {
         name: "ABOUT",
         to: "/about"
     },
