@@ -10,7 +10,6 @@ import styles from "./Settings.module.css";
 
 import ImageLoader from "../../components/ImageLoader";
 import Modal from "../../components/Modal";
-import Backdrop from "../../components/Backdrop";
 import Layout from "../../components/Layout";
 import Button from "../../components/Common/Button";
 import Alert from "../../components/Alert";
@@ -22,14 +21,15 @@ class Settings extends Component {
     state = {
         homeBackground: 2,
         showModal: false,
+        showModalEdit: false,
         form: {
             title: "",
-            category: "football",
+            category: "Illustrations",
             imageURL: ""
         },
         formErrors: {
             title: "",
-            category: "football",
+            category: "Illustrations",
             imageURL: ""
         },
         formValidity: {
@@ -46,6 +46,13 @@ class Settings extends Component {
         });
     };
 
+    handleEditDesignClick = () => {
+        const { showModalEdit } = this.state;
+        this.setState({
+            showModalEdit: !showModalEdit
+        });
+    }
+
     handleChangeBackground = id => {
         this.setState({
             homeBackground: id
@@ -54,7 +61,7 @@ class Settings extends Component {
         Alert("success", "Background has been changed!");
     }
 
-    handleCloseModal = () => this.setState({ showModal: false });
+    handleCloseModal = () => this.setState({ showModal: false, showModalEdit: false });
 
     handleFormSubmit = e => {
         e.preventDefault();
@@ -78,12 +85,12 @@ class Settings extends Component {
     }
 
     renderModal = () => {
-        const { showModal, form, formErrors, canSubmit } = this.state;
+        const { showModal, showModalEdit, form, formErrors, canSubmit } = this.state;
         const { title, category, imageURL } = form;
         const categories = [
             {
-                name: "Football",
-                value: "football"
+                name: "Illustrations",
+                value: "Illustrations"
             },
             {
                 name: "Logo",
@@ -92,10 +99,10 @@ class Settings extends Component {
         ];
         return (
             <Modal
-                show={showModal}
+                show={showModal || showModalEdit}
                 onClose={this.handleCloseModal}
+                title={showModal ? "New Design" : "Edit Design"}
             >
-                <h2>Add New Design</h2>
                 <Form onSubmit={this.handleFormSubmit} className={styles.settings_modal_form}>
                     <p>Title *</p>
                     <Input
@@ -181,7 +188,7 @@ class Settings extends Component {
                             return (
                                 <div className={styles.settings_columns}>
                                     <div className={styles.settings_action_column}>
-                                        <div>
+                                        <div onClick={this.handleEditDesignClick} role="presentation">
                                             <FontAwesomeIcon icon="edit" size="1x" />
                                         </div>
                                         <div onClick={e => this.handleChangeBackground(row.original.id)} role="presentation">
@@ -203,10 +210,8 @@ class Settings extends Component {
     )
 
     render() {
-        const { showModal } = this.state;
         return (
             <Fragment>
-                <Backdrop show={showModal} />
                 {this.renderModal()}
                 <Layout>
                     <h2>Settings</h2>

@@ -4,10 +4,14 @@ button {
     font: inherit;
     font-weight: 600;
     color: #fff;
+    outline: none;
 }
 
 button:disabled {
     cursor: not-allowed;
+    background: #ccc;
+    border-color: #ccc;
+    opacity: 1;
 }
 
 .button_default {
@@ -46,10 +50,6 @@ button:disabled {
     letter-spacing: 2px;
     line-height: 14px;
     min-width: 134px;
-}
-
-button {
-    outline: none;
 }
 
 .button_default:hover {
