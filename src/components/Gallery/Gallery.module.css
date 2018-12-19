@@ -1,0 +1,6 @@
+.gallery_container {
+    display: grid;
+    display: -ms-grid;
+    grid-template-columns: repeat(auto-fit, minmax(285px, 1fr));
+    grid-auto-rows: minmax(285px, 1fr);
+}
