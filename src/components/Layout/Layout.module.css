@@ -18,6 +18,7 @@ div.layout_container_loaded {
 
 .layout_main_wrapper.layout_main_wrapper_nomargin {
     margin: 0;
+    padding: 0;
 }
 
 .layout_title {

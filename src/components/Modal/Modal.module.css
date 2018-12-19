@@ -41,7 +41,7 @@
 
 .modal_main {
     max-height: 400px;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 .modal_show {

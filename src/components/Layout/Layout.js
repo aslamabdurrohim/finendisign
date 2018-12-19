@@ -7,11 +7,12 @@ import styles from "./Layout.module.css";
 
 class Layout extends Component {
     static propTypes = {
-        title: PropTypes.string.isRequired,
+        title: PropTypes.string,
         nomargin: PropTypes.bool
     };
 
     static defaultProps = {
+        title: "",
         nomargin: false
     }
 

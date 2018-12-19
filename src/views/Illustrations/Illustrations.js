@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import styles from "./Illustrations.module.css";
 import Layout from "../../components/Layout";
+import Gallery from "../../components/Gallery";
 
 class Illustrations extends Component {
     state = {
@@ -8,10 +8,9 @@ class Illustrations extends Component {
     };
 
     render() {
-        const { title } = this.state;
         return (
-            <Layout title={title} nomargin>
-                <div />
+            <Layout nomargin>
+                <Gallery />
             </Layout>
         );
     }
