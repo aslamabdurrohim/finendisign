@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import styles from "./Illustrations.module.css";
 import Layout from "../../components/Layout";
 
 class Illustrations extends Component {
