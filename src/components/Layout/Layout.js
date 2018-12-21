@@ -17,18 +17,17 @@ class Layout extends Component {
     }
 
     state = {
-        classes: [styles.layout_container]
+        classeLoaded: null
     };
 
     componentDidMount() {
-        const classes = [styles.layout_container, styles.layout_container_loaded];
         this.setState({
-            classes
+            classeLoaded: styles.layout_container_loaded
         });
     }
 
     render() {
-        const { classes } = this.state;
+        const { classeLoaded } = this.state;
         const { children, title, nomargin } = this.props;
 
         let wrapperClass = null;
@@ -40,9 +39,9 @@ class Layout extends Component {
 
         return (
             <Fragment>
-                <div className={classes.join(" ")}>
+                <div className={styles.layout_container}>
                     <Navbar />
-                    <section className={styles.layout_main_container}>
+                    <section className={[styles.layout_main_container, classeLoaded].join(" ")}>
                         <div className={wrapperClass.join(" ")}>
                             <Alert stack timeout={3000} />
                             <h2 className={styles.layout_title}>{title}</h2>

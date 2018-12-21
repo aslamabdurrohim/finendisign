@@ -1,5 +1,5 @@
-div.layout_container_loaded {
-    animation: fadein 1s;
+section.layout_container_loaded {
+    animation: fadein 1.8s;
 }
 
 .layout_container {
