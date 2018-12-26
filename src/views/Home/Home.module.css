@@ -10,9 +10,11 @@
 
 .home_background_container {
     position: absolute;
-    object-fit: cover;
     width: 100vw;
     height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;  
     top: 0;
     left: 0;
     z-index: -1;

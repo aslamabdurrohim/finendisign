@@ -16,3 +16,5 @@ export const routes = [
         to: "/settings"
     }
 ];
+
+export const baseURL = "https://finendisign.com";

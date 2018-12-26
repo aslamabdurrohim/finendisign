@@ -5,13 +5,11 @@ import Logo from "../../assets/images/logo.png";
 import Background from "../../assets/images/background.jpg";
 
 import Button from "../../components/Common/Button";
-import ImageLoader from "../../components/ImageLoader";
 
 const Home = () => (
     <Fragment>
         <div className={styles.home_container}>
-            <div className={styles.home_background_container}>
-                <ImageLoader srcLoaded={Background} />
+            <div className={styles.home_background_container} style={{ backgroundImage: `url(${Background})` }}>
                 <div className={styles.home_background_backdrop} />
             </div>
             <div className={styles.home_title_wrapper}>

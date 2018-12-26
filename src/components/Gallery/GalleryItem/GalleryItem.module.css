@@ -7,7 +7,7 @@
 
 .gallery_item_overlay {
     opacity: 0;
-    background: rgba(97,97,97,.5);
+    background: rgba(97,97,97, .3);
     position: absolute;
     display: flex;
     justify-content: center;

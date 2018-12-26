@@ -1,0 +1,8 @@
+.illustrations_detail_container_loaded {
+    animation: fadein 1.8s;
+}
+
+@keyframes fadein {
+    from { opacity: 0;}
+    to { opacity: 1;}
+}

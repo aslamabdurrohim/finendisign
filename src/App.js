@@ -6,7 +6,6 @@ import { faInstagram, faFacebook, faTwitter } from "@fortawesome/fontawesome-fre
 
 import Home from "./views/Home";
 import Illustrations from "./views/Illustrations";
-import IllustrationsDetail from "./views/Illustrations/IllustrationsDetail";
 import Contact from "./views/Contact";
 import About from "./views/About";
 import Settings from "./views/Settings";

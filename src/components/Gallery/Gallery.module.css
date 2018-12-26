@@ -5,6 +5,7 @@
     grid-auto-rows: 285px;
     z-index: 4;
     position: relative;
+    background: #333;
 }
 
 .gallery_wrapper {

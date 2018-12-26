@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import { Route } from "react-router-dom";
+import Media from "react-media";
+import { isBrowser, isMobile } from "react-device-detect";
 import IllustrationsDetail from "./IllustrationsDetail";
 import Layout from "../../components/Layout";
 import Gallery from "../../components/Gallery";
@@ -66,11 +68,22 @@ class Illustrations extends Component {
 
     render() {
         const { designs } = this.state;
-        const { match } = this.props;
+        const { match, location } = this.props;
         return (
             <Layout nomargin>
                 <Route path={`${match.path}/:name`} component={IllustrationsDetail} />
-                <Gallery designs={designs} />
+                <Media
+                    query="(min-width: 501px)"
+                    defaultMatches={isBrowser}
+                    render={() => <Gallery designs={designs} />}
+                />
+                {(location.pathname === "/illustrations" || location.pathname === "/logos") && (
+                    <Media
+                        query="(max-device-width : 480px)"
+                        defaultMatches={isMobile}
+                        render={() => <Gallery designs={designs} />}
+                    />
+                )}
             </Layout>
         );
     }
