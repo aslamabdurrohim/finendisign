@@ -21,7 +21,7 @@
 .footer_logos > div {
     background: #6E6E6E;
     border-radius: 50%;
-    margin-right: 0.8rem;
+    margin: 0.4rem;
     width: 25px;
     height: 25px;
     display: flex;
@@ -33,7 +33,7 @@
     border-bottom-color: transparent; 
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
     .footer {
         position: static;
         justify-content: center;

@@ -4,13 +4,10 @@ import "./index.css";
 import { BrowserRouter as Router } from "react-router-dom";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
-import ScrollToTop from "./components/ScrollToTop";
 
 ReactDOM.hydrate(
     <Router>
-        <ScrollToTop>
-            <App />
-        </ScrollToTop>
+        <App />
     </Router>,
     document.getElementById("root")
 );

@@ -1,9 +1,4 @@
-section.layout_container_loaded {
-    animation: fadein 1.8s;
-}
-
 .layout_container {
-    background: #333;
     color: #fff;
 }
 
@@ -12,31 +7,11 @@ section.layout_container_loaded {
 }
 
 .layout_main_wrapper {
-    padding: 85px 0 23px;
-    margin: 0 120px;
+    background: #333;
 }
 
-.layout_main_wrapper.layout_main_wrapper_nomargin {
-    margin: 0;
-    padding: 0;
-}
-
-.layout_title {
-    margin-bottom: 1rem;
-}
-
-@keyframes fadein {
-    from { opacity: 0;}
-    to { opacity: 1;}
-}
-
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
     .layout_main_container {
         margin: 0;
-    }
-
-    .layout_main_wrapper {
-        padding: 1rem;
-        margin: 0 0 1rem;
     }
 }

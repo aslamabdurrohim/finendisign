@@ -10,6 +10,7 @@
     width: 100%;
     height: auto;
     display: none;
+    object-fit: cover;
     opacity: 0;
     transition: opacity 1s ease;
 }
@@ -37,7 +38,6 @@
     height: 100%;
     width: 6px;
     display: inline-block;
-
     -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
     animation: sk-stretchdelay 1.2s infinite ease-in-out;
 }

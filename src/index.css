@@ -39,20 +39,42 @@ h1, h2, h3 ,h4 {
   text-transform: uppercase;
 }
 
+h2 {
+  font-size: 19.25px;
+}
+
 p {
   font-size: 0.8rem;
   line-height: 1.5;
   margin: 0 0 1rem;
 }
 
-@media(max-width: 410px) {
+.fade-enter {
+  opacity: 0.01;
+}
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 600ms ease-in;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit.fade-exit-active {
+  opacity: 0.01;
+  transition: opacity 600ms ease-in
+}
+
+@media (max-width: 410px) {
   #root {
     width: 100vw;
   }
 }
 
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   p {
     font-size: 1rem;
   }

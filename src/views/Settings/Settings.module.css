@@ -1,3 +1,8 @@
+.settings_container {
+    padding: 30px 0 23px;
+    margin: 0 120px;
+}
+
 .settings_new_design_btn_contaiener {
     display: flex;
     justify-content: flex-end;
@@ -32,10 +37,6 @@
     border: 2px solid #000;
     transition: background .15s linear;
     cursor: pointer;
-}
-
-.settings_add_imageurl_icon,
-.settings_remove_imageurl_icon {
     background: #fff;
 }
 
@@ -46,5 +47,12 @@
 
 .settings_remove_imageurl_icon:hover {
     color: #fff;
-    background: #ff0000;
+    background: #f00;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .settings_container {
+        padding: 1rem;
+        margin: 0 0 1rem;
+    }
 }

@@ -1,5 +1,7 @@
-import React from "react";
-import { Route, Switch } from "react-router-dom";
+import React, { Fragment } from "react";
+import { Route, Switch, withRouter } from "react-router-dom";
+import { TransitionGroup, CSSTransition } from "react-transition-group";
+
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {
     faEnvelope,
@@ -12,6 +14,7 @@ import {
     faChevronLeft
 } from "@fortawesome/free-solid-svg-icons";
 import { faInstagram, faFacebook, faTwitter } from "@fortawesome/fontawesome-free-brands";
+import Layout from "./components/Layout";
 
 import Home from "./views/Home";
 import Illustrations from "./views/Illustrations";
@@ -33,15 +36,26 @@ library.add(
     faChevronLeft
 );
 
-const App = () => (
-    <Switch>
+const App = ({ location }) => (
+    <Fragment>
         <Route exact path="/" component={Home} />
-        <Route path="/about" component={About} />
-        <Route path="/contact" component={Contact} />
-        <Route path="/illustrations" component={Illustrations} />
-        <Route path="/settings" component={Settings} />
-        <Route render={() => <h2>Not Found :(</h2>} />
-    </Switch>
+        <Layout>
+            <TransitionGroup>
+                <CSSTransition
+                    key={location.key}
+                    timeout={{ enter: 600, exit: 600 }}
+                    classNames="fade"
+                >
+                    <Switch>
+                        <Route path="/about" component={About} />
+                        <Route path="/contact" component={Contact} />
+                        <Route path="/illustrations" component={Illustrations} />
+                        <Route path="/settings" component={Settings} />
+                    </Switch>
+                </CSSTransition>
+            </TransitionGroup>
+        </Layout>
+    </Fragment>
 );
 
-export default App;
+export default withRouter(App);

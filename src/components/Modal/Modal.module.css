@@ -1,8 +1,6 @@
 .modal {
     position: fixed;
     opacity: 0;
-    top: 0;
-    left: 0;
     width: 80%;
     top: 10%;
     left: 10%;
@@ -12,6 +10,7 @@
     z-index: -200;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
     background: #fff;
+    color: #000;
 } 
 
 .modal_header {
@@ -52,7 +51,7 @@
     transform: translateY(0) !important;
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
     .modal_header h1 {
         font-size: 1.4rem;
     }
