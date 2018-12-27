@@ -1,7 +1,16 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { faEnvelope, faPlus, faEdit, faImages, faTimes, faShareAlt, faChevronRight, faChevronLeft } from "@fortawesome/free-solid-svg-icons";
+import {
+    faEnvelope,
+    faPlus,
+    faEdit,
+    faImages,
+    faTimes,
+    faShareAlt,
+    faChevronRight,
+    faChevronLeft
+} from "@fortawesome/free-solid-svg-icons";
 import { faInstagram, faFacebook, faTwitter } from "@fortawesome/fontawesome-free-brands";
 
 import Home from "./views/Home";
