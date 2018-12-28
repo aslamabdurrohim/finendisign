@@ -1,6 +1,13 @@
 .contact_container {
     display: flex;
     justify-content: space-between;
+    padding: 85px 0 23px;
+    margin: 0 120px;
+}
+
+.contact_title {
+    margin-bottom: 1rem;
+    text-transform: uppercase;
 }
 
 .contact_container p {
@@ -51,9 +58,11 @@
     font-size: 10px;
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
     .contact_container {
         flex-flow: column nowrap;
+        padding: 1rem;
+        margin: 0 0 1rem;
     }
 
     .contact_container p {

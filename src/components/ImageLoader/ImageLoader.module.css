@@ -1,23 +1,16 @@
 .image_container {
     position: relative;
     width: 100%;
-    height: 100%;
+    height: auto;
     overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: block;
 }
 
 .image_loaded {
-    position: absolute;
-    z-index: 2;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    width: 100%;
+    height: auto;
+    display: none;
+    object-fit: cover;
     opacity: 0;
     transition: opacity 1s ease;
 }
@@ -45,7 +38,6 @@
     height: 100%;
     width: 6px;
     display: inline-block;
-
     -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
     animation: sk-stretchdelay 1.2s infinite ease-in-out;
 }

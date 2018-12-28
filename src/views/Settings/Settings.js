@@ -8,7 +8,6 @@ import { formValidation, submitValidation, errorClass } from "../../utils/form-v
 import styles from "./Settings.module.css";
 
 import Modal from "../../components/Modal";
-import Layout from "../../components/Layout";
 import Button from "../../components/Common/Button";
 import Alert from "../../components/Alert";
 import Form from "../../components/Common/Form";
@@ -77,7 +76,7 @@ class Settings extends Component {
                 )}
             </div>
         ));
-    }
+    };
 
     handleAddDesignClick = () => {
         const { showModal } = this.state;
@@ -91,16 +90,19 @@ class Settings extends Component {
         this.setState({
             showModalEdit: !showModalEdit
         });
-    }
+    };
 
     handleAddImageUrlInput = () => {
-        this.setState(prevState => ({
-            formValidity: {
-                imageURL: [...prevState.formValidity.imageURL, false]
-            },
-            imageURLInputs: [...prevState.imageURLInputs, ""]
-        }), () => this.handleSubmitValidation());
-    }
+        this.setState(
+            prevState => ({
+                formValidity: {
+                    imageURL: [...prevState.formValidity.imageURL, false]
+                },
+                imageURLInputs: [...prevState.imageURLInputs, ""]
+            }),
+            () => this.handleSubmitValidation()
+        );
+    };
 
     handleRemoveImageUrlClick = index => {
         const { imageURLInputs, form, formValidity, formErrors } = this.state;
@@ -114,19 +116,22 @@ class Settings extends Component {
         inputValues.splice(index, 1);
         inputValidity.splice(index, 1);
         inputErros.splice(index, 1);
-        this.setState({
-            imageURLInputs: values,
-            form: {
-                imageURL: inputValues
+        this.setState(
+            {
+                imageURLInputs: values,
+                form: {
+                    imageURL: inputValues
+                },
+                formValidity: {
+                    imageURL: inputValidity
+                },
+                formErrors: {
+                    imageURL: inputErros
+                }
             },
-            formValidity: {
-                imageURL: inputValidity
-            },
-            formErrors: {
-                imageURL: inputErros
-            }
-        }, () => this.handleSubmitValidation());
-    }
+            () => this.handleSubmitValidation()
+        );
+    };
 
     handleChangeBackground = id => {
         this.setState({
@@ -134,41 +139,50 @@ class Settings extends Component {
         });
 
         Alert("success", "Background has been changed!");
-    }
+    };
 
     handleCloseModal = () => this.setState({ showModal: false, showModalEdit: false });
 
     handleFormSubmit = e => {
         e.preventDefault();
-    }
+    };
 
     handleSubmitValidation = () => {
         const { formValidity, form } = this.state;
         this.setState({ canSubmit: submitValidation(form, formValidity) });
-    }
+    };
 
     handleInputChange = (e, index = 0) => {
         e.preventDefault();
         const { value, name } = e.target;
         const { formErrors, formValidity, form } = this.state;
-        const { validationError, validity } = formValidation(name, value, formValidity, formErrors, index);
+        const { validationError, validity } = formValidation(
+            name,
+            value,
+            formValidity,
+            formErrors,
+            index
+        );
         const imgUrlValues = [...form.imageURL];
 
         if (name === "imageURL") {
             imgUrlValues[index] = value;
         }
 
-        this.setState(prevState => ({
-            form: {
-                ...prevState.form,
-                [name]: name === "imageURL" ? imgUrlValues : value
-            },
-            formErrors: validationError,
-            formValidity: validity
-        }), () => {
-            this.handleSubmitValidation();
-        });
-    }
+        this.setState(
+            prevState => ({
+                form: {
+                    ...prevState.form,
+                    [name]: name === "imageURL" ? imgUrlValues : value
+                },
+                formErrors: validationError,
+                formValidity: validity
+            }),
+            () => {
+                this.handleSubmitValidation();
+            }
+        );
+    };
 
     renderModal = () => {
         const { showModal, showModalEdit, form, formErrors, canSubmit } = this.state;
@@ -210,24 +224,20 @@ class Settings extends Component {
                     />
                     <p>Image URL *</p>
                     {this.dynamicImageUrlInputs()}
-                    <Button
-                        type="submit"
-                        classBtn="submit"
-                        disabled={!canSubmit}
-                    >
-                    SUBMIT
+                    <Button type="submit" classBtn="submit" disabled={!canSubmit}>
+                        SUBMIT
                     </Button>
                 </Form>
             </Modal>
         );
-    }
+    };
 
     render() {
         const { homeBackground } = this.state;
         return (
             <Fragment>
                 {this.renderModal()}
-                <Layout title="Settings">
+                <div className={styles.settings_container}>
                     <div className={styles.settings_new_design_btn_contaiener}>
                         <Button
                             type="button"
@@ -247,7 +257,7 @@ class Settings extends Component {
                             type="settings"
                         />
                     </div>
-                </Layout>
+                </div>
             </Fragment>
         );
     }

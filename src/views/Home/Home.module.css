@@ -1,18 +1,23 @@
 .home_container {
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     width: 100vw;
     height: 100vh;
+    z-index: 99;
 }
 
 .home_background_container {
     position: absolute;
-    object-fit: cover;
     width: 100vw;
     height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;  
     top: 0;
     left: 0;
     z-index: -1;
@@ -66,12 +71,9 @@
     width: 100%;
 }
 
-@media 
-    (min-width: 320px) and 
+@media (min-width: 320px) and 
     (max-width: 641px) {    
     .home_title {
         font-size: 3rem;
     }
 }
-
-  

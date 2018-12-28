@@ -1,17 +1,28 @@
-import React from "react";
+import React, { Component } from "react";
+import { withRouter } from "react-router-dom";
 import GalleryItem from "./GalleryItem";
 import styles from "./Gallery.module.css";
 
-const Gallery = () => (
-    <div className={styles.gallery_container}>
-        <GalleryItem />
-        <GalleryItem />
-        <GalleryItem />
-        <GalleryItem />
-        <GalleryItem />
-        <GalleryItem />
-        <GalleryItem />
-    </div>
-);
+class Gallery extends Component {
+    handleItemCick = title => {
+        const { history, match } = this.props;
+        const nameURL = title.toLowerCase().replace(/ /g, "-").replace(/[^\w-]+/g, "");
 
-export default Gallery;
+        history.push(`${match.path}/${nameURL}`);
+    }
+
+    render() {
+        const { designs } = this.props;
+        return (
+            <div className={styles.gallery_container}>
+                {designs.map((design, index) => (
+                    <div className={styles.gallery_wrapper} key={index}>
+                        <GalleryItem design={design} onClick={() => this.handleItemCick(design.title)} />
+                    </div>
+                ))}
+            </div>
+        );
+    }
+}
+
+export default withRouter(Gallery);
