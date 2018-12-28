@@ -2,11 +2,11 @@ import React, { Component, Fragment } from "react";
 import { Route } from "react-router-dom";
 import Media from "react-media";
 import { isBrowser, isMobile } from "react-device-detect";
-import IllustrationsDetail from "./IllustrationsDetail";
+import LogosDetail from "./LogosDetail";
 import ScrollToTop from "../../components/ScrollToTop";
 import Gallery from "../../components/Gallery";
 
-class Illustrations extends Component {
+class Logos extends Component {
     state = {
         designs: [
             {
@@ -81,14 +81,14 @@ class Illustrations extends Component {
         return (
             <Fragment>
                 <ScrollToTop>
-                    <Route path={`${match.path}/:name`} component={IllustrationsDetail} />
+                    <Route path={`${match.path}/:name`} component={LogosDetail} />
                 </ScrollToTop>
                 <Media
                     query="(min-width: 501px)"
                     defaultMatches={isBrowser}
                     render={() => <Gallery designs={designs} />}
                 />
-                {location.pathname === "/illustrations" && (
+                {location.pathname === "/logos" && (
                     <Media
                         query="(max-device-width : 480px)"
                         defaultMatches={isMobile}
@@ -100,4 +100,4 @@ class Illustrations extends Component {
     }
 }
 
-export default Illustrations;
+export default Logos;

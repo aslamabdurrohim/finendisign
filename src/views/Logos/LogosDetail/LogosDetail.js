@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import GalleryDetailWrapper from "../../../components/Gallery/GalleryDetailWrapper";
 
-class IllustrationsDetail extends Component {
+class LogosDetail extends Component {
     state = {
         designs: {
             id: 1,
@@ -23,4 +23,4 @@ class IllustrationsDetail extends Component {
     }
 }
 
-export default IllustrationsDetail;
+export default LogosDetail;
