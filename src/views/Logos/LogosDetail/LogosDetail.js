@@ -2,9 +2,9 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import GalleryDetail from "../../../components/Gallery/GalleryDetail";
-import styles from "./IllustrationsDetail.module.css";
+import styles from "./LogosDetail.module.css";
 
-class IllustrationsDetail extends Component {
+class LogosDetail extends Component {
     state = {
         designs: {
             id: 1,
@@ -22,18 +22,18 @@ class IllustrationsDetail extends Component {
     render() {
         const { designs } = this.state;
         return (
-            <div className={styles.illustrations_detail_container}>
-                <div className={styles.illustrations_detail_gallery}>
+            <div className={styles.logos_detail_container}>
+                <div className={styles.logos_detail_gallery}>
                     <GalleryDetail designs={designs} />
                 </div>
-                <div className={styles.illustrations_detail_navigator}>
-                    <div className={styles.illustrations_detail_navigator_left}>
+                <div className={styles.logos_detail_navigator}>
+                    <div className={styles.logos_detail_navigator_left}>
                         <FontAwesomeIcon icon="chevron-left" />
                     </div>
-                    <Link to="/illustrations">
-                        <div className={styles.illustrations_detail_navigator_home} />
+                    <Link to="/logos">
+                        <div className={styles.logos_detail_navigator_home} />
                     </Link>
-                    <div className={styles.illustrations_detail_navigator_right}>
+                    <div className={styles.logos_detail_navigator_right}>
                         <FontAwesomeIcon icon="chevron-right" />
                     </div>
                 </div>
@@ -42,4 +42,4 @@ class IllustrationsDetail extends Component {
     }
 }
 
-export default IllustrationsDetail;
+export default LogosDetail;
