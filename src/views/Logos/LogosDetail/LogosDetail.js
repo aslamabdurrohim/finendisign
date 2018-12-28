@@ -1,8 +1,5 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import GalleryDetail from "../../../components/Gallery/GalleryDetail";
-import styles from "./LogosDetail.module.css";
+import GalleryDetailWrapper from "../../../components/Gallery/GalleryDetailWrapper";
 
 class LogosDetail extends Component {
     state = {
@@ -21,24 +18,8 @@ class LogosDetail extends Component {
 
     render() {
         const { designs } = this.state;
-        return (
-            <div className={styles.logos_detail_container}>
-                <div className={styles.logos_detail_gallery}>
-                    <GalleryDetail designs={designs} />
-                </div>
-                <div className={styles.logos_detail_navigator}>
-                    <div className={styles.logos_detail_navigator_left}>
-                        <FontAwesomeIcon icon="chevron-left" />
-                    </div>
-                    <Link to="/logos">
-                        <div className={styles.logos_detail_navigator_home} />
-                    </Link>
-                    <div className={styles.logos_detail_navigator_right}>
-                        <FontAwesomeIcon icon="chevron-right" />
-                    </div>
-                </div>
-            </div>
-        );
+        const { match } = this.props;
+        return <GalleryDetailWrapper designs={designs} match={match} />;
     }
 }
 
