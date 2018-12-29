@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { Route, Switch, withRouter } from "react-router-dom";
+import { Route, withRouter } from "react-router-dom";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 
 import { library } from "@fortawesome/fontawesome-svg-core";
@@ -16,12 +16,8 @@ import {
 import { faInstagram, faFacebook, faTwitter } from "@fortawesome/fontawesome-free-brands";
 import Layout from "./components/Layout";
 
+import Routes from "./routes";
 import Home from "./views/Home";
-import Illustrations from "./views/Illustrations";
-import Logos from "./views/Logos";
-import Contact from "./views/Contact";
-import About from "./views/About";
-import Settings from "./views/Settings";
 
 library.add(
     faInstagram,
@@ -47,13 +43,7 @@ const App = ({ location }) => (
                     timeout={{ enter: 600, exit: 600 }}
                     classNames="fade"
                 >
-                    <Switch>
-                        <Route path="/about" component={About} />
-                        <Route path="/contact" component={Contact} />
-                        <Route path="/illustrations" component={Illustrations} />
-                        <Route path="/logos" component={Logos} />
-                        <Route path="/settings" component={Settings} />
-                    </Switch>
+                    <Routes />
                 </CSSTransition>
             </TransitionGroup>
         </Layout>
