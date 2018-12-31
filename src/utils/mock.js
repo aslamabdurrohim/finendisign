@@ -3,7 +3,7 @@ export const data = [
         id: 1,
         title: "Knight",
         imageURL: [
-            "http://pre14.deviantart.net/7982/th/pre/f/2013/294/3/f/dark_fantasy_character_design_by_d_torres-d6rdipl.jpg",
+            "https://www.wallpaperup.com/uploads/wallpapers/2013/03/24/62484/d0019f689269c57bf7e7a05f216b446a.jpg",
             "https://images.template.net/wp-content/uploads/2015/09/28172128/Unspecified-Digital-Fantasy-Art-Design.jpg",
             "https://i.stack.imgur.com/STUG3.jpg"
         ],

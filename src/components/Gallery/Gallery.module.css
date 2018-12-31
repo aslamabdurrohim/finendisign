@@ -5,6 +5,7 @@
     grid-auto-rows: 285px;
     z-index: 4;
     position: relative;
+    min-height: 500px;
     background: #333;
 }
 
@@ -13,4 +14,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.gallery_wrapper img {
+    height: 100%;
 }

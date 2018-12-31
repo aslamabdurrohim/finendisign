@@ -1,6 +1,6 @@
 /* eslint no-console: 0 */
 
-import axios from "axios";
+import axios, { isCancel } from "axios";
 import { baseURL } from "../utils/consts";
 
 const client = axios.create({
@@ -19,8 +19,10 @@ const request = options => {
             console.error("Status: ", error.response.status);
             console.error("Data: ", error.response.data);
             console.error("Headers: ", error.response.headers);
+        } else if (isCancel(error)) {
+            console.error("Request Canceled: ", error.message);
         } else {
-            console.error("Error Message: ", error.message);
+            console.error("Request Failed: ", error.message);
         }
 
         return Promise.reject(error.response || error.message);

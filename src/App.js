@@ -40,7 +40,7 @@ const App = ({ location }) => (
             <TransitionGroup>
                 <CSSTransition
                     key={location.key}
-                    timeout={{ enter: 600, exit: 600 }}
+                    timeout={{ enter: 1000, exit: 1000 }}
                     classNames="fade"
                 >
                     <Routes />

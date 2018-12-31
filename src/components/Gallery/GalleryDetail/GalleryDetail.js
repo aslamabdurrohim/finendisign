@@ -19,7 +19,14 @@ import { baseURL } from "../../../utils/routes";
 
 class GalleryDetail extends Component {
     static propTypes = {
-        designs: PropTypes.objectOf(PropTypes.any).isRequired
+        designs: PropTypes.shape({
+            id: PropTypes.number,
+            title: PropTypes.string,
+            desc: PropTypes.string,
+            imageURLs: PropTypes.arrayOf(PropTypes.string),
+            category: PropTypes.string,
+            isHomeBg: PropTypes.bool
+        }).isRequired
     };
 
     state = {
@@ -36,10 +43,8 @@ class GalleryDetail extends Component {
     render() {
         const { designs, match } = this.props;
         const { isShareClicked } = this.state;
-        const { title, desc, designUrls } = designs;
-
+        const { title, desc, imageURLs } = designs;
         const shareURL = baseURL + match.url;
-
         return (
             <div className={[styles.gallery_detail_container].join(" ")}>
                 <div className={styles.gallery_detail_info_wrapper}>
@@ -124,7 +129,7 @@ class GalleryDetail extends Component {
                     </div>
                 </div>
                 <div className={styles.gallery_detail_designs_wrapper}>
-                    {designUrls.map((designURL, index) => (
+                    {imageURLs.map((designURL, index) => (
                         <ImageLoader
                             srcLoaded={designURL}
                             className={styles.gallery_detail_designs_image}

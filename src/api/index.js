@@ -1,18 +1,15 @@
 import request from "./request";
 
-export const getById = id => request({
+export const get = (source, id = undefined) => request({
     url: `/${id}`,
-    method: "GET"
+    method: "GET",
+    cancelToken: source.token
 });
 
-export const getAll = () => request({
-    url: "/",
-    method: "GET"
-});
-
-export const post = content => request({
+export const post = (source, content) => request({
     url: "/post/",
     method: "POST",
+    cancelToken: source.token,
     data: {
         content
     }

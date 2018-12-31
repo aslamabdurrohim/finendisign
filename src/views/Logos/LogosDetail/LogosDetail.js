@@ -1,20 +1,38 @@
 import React, { Component } from "react";
+import qs from "query-string";
+import { CancelToken } from "axios";
+import { get } from "../../../api";
 import GalleryDetailWrapper from "../../../components/Gallery/GalleryDetailWrapper";
 
 class LogosDetail extends Component {
     state = {
         designs: {
-            id: 1,
-            title: "Hello World",
-            desc:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-            designUrls: [
-                "http://lorempixel.com/630/930/",
-                "http://lorempixel.com/630/930/",
-                "http://lorempixel.com/630/930/"
-            ]
+            id: null,
+            title: "",
+            desc: "",
+            imageURLs: [],
+            category: "",
+            isHomeBg: false
         }
     };
+
+    async componentDidMount() {
+        const { location } = this.props;
+        const id = parseInt(qs.parse(location.search).id, 10);
+
+        this.source = CancelToken.source();
+        const metaDesigns = await get(this.source, id);
+        const designs = metaDesigns.data.filter(
+            design => (design.category === "logo" || design.category === "Logo") && design.id === id
+        );
+        this.setState({
+            designs: designs[0]
+        });
+    }
+
+    componentWillUnmount() {
+        this.source.cancel("Request is canceled due to new incoming request");
+    }
 
     render() {
         const { designs } = this.state;
